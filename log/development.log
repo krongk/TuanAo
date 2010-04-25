@@ -30542,3 +30542,747 @@ ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:m
   C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 18:42:10) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (1.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 48ms (View: 24, DB: 8) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 18:42:11) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AboutController#job (for 127.0.0.1 at 2010-04-25 18:42:18) [GET]
+Rendering template within layouts/application
+Rendering about/job
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 34ms (View: 30, DB: 2) | 200 OK [http://127.0.0.1/about/job]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 18:42:19) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:25:49) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 55ms (View: 38, DB: 5) | 200 OK [http://127.0.0.1/today]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:25:49) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:26:05) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (1.0ms)
+Rendered layouts/_sidebar (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 208ms (View: 181, DB: 5) | 200 OK [http://127.0.0.1/today]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:26:07) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:27:27) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 56ms (View: 39, DB: 4) | 200 OK [http://127.0.0.1/today]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:27:28) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:27:44) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (1.0ms)
+Rendered layouts/_sidebar (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (2.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 89ms (View: 52, DB: 7) | 200 OK [http://127.0.0.1/today]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:27:45) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:27:53) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (1.0ms)
+Rendered layouts/_sidebar (1.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 73ms (View: 46, DB: 9) | 200 OK [http://127.0.0.1/today]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:27:54) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:28:03) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (0.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 90ms (View: 53, DB: 21) | 200 OK [http://127.0.0.1/today]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:28:04) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:28:12) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (0.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 79ms (View: 56, DB: 7) | 200 OK [http://127.0.0.1/today]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:28:14) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:28:23) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (0.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 92ms (View: 62, DB: 12) | 200 OK [http://127.0.0.1/today]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:28:24) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:28:35) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (1.0ms)
+Rendered layouts/_sidebar (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 85ms (View: 59, DB: 7) | 200 OK [http://127.0.0.1/today]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:28:36) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:28:44) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (0.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 83ms (View: 58, DB: 9) | 200 OK [http://127.0.0.1/today]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:28:45) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (8.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:28:52) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (0.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 80ms (View: 53, DB: 22) | 200 OK [http://127.0.0.1/today]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:28:53) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:29:04) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 66ms (View: 45, DB: 7) | 200 OK [http://127.0.0.1/today]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:29:05) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:29:14) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (0.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 77ms (View: 53, DB: 10) | 200 OK [http://127.0.0.1/today]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:29:15) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:29:31) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 76ms (View: 53, DB: 4) | 200 OK [http://127.0.0.1/today]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:29:32) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:29:43) [GET]
+  [4;36;1mProduct Load (2.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (1.0ms)
+Rendered layouts/_sidebar (2.0ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 97ms (View: 66, DB: 9) | 200 OK [http://127.0.0.1/today]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:29:44) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:29:52) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (1.0ms)
+Rendered layouts/_sidebar (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 78ms (View: 55, DB: 6) | 200 OK [http://127.0.0.1/today]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:29:53) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:30:04) [GET]
+  [4;36;1mProduct Load (8.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (1.0ms)
+Rendered layouts/_sidebar (1.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 117ms (View: 80, DB: 13) | 200 OK [http://127.0.0.1/today]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:30:06) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:30:28) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 81ms (View: 58, DB: 5) | 200 OK [http://127.0.0.1/today]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:30:29) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:31:20) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (1.0ms)
+Rendered layouts/_sidebar (1.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 39ms (View: 19, DB: 7) | 200 OK [http://127.0.0.1/today]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:31:21) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:31:31) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (0.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 160ms (View: 43, DB: 4) | 200 OK [http://127.0.0.1/today]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:31:33) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
