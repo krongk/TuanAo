@@ -31286,3 +31286,503 @@ ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:m
   C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-04-25 19:34:42) [GET]
+Redirected to http://127.0.0.1:3000/session/new
+Filter chain halted as [:admin_required] rendered_or_redirected.
+Completed in 3ms (DB: 2) | 302 Found [http://127.0.0.1/products/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-04-25 19:34:42) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 23ms (View: 20, DB: 0) | 200 OK [http://127.0.0.1/session/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:34:43) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-04-25 19:34:48) [POST]
+  Parameters: {"commit"=>"登 录", "authenticity_token"=>"zeuQ4m9nFDn70L0ZwIKljiqKoVB+D4rmmRefOPWyHWk=", "login"=>"admin", "password"=>"admin"}
+  [4;36;1mUser Load (116.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'admin' and activated_at IS NOT NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 271ms (View: 18, DB: 117) | 200 OK [http://127.0.0.1/session]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:34:49) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-04-25 19:34:58) [POST]
+  Parameters: {"commit"=>"登 录", "authenticity_token"=>"zeuQ4m9nFDn70L0ZwIKljiqKoVB+D4rmmRefOPWyHWk=", "login"=>"kenrome", "password"=>"0020010"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (login = 'kenrome' and activated_at IS NOT NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://127.0.0.1/session]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:34:58) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-04-25 19:35:00) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://127.0.0.1/login]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:35:01) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-04-25 19:35:08) [POST]
+  Parameters: {"commit"=>"登 录", "authenticity_token"=>"zeuQ4m9nFDn70L0ZwIKljiqKoVB+D4rmmRefOPWyHWk=", "login"=>"admin", "password"=>"admin"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'admin' and activated_at IS NOT NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 47ms (View: 14, DB: 2) | 200 OK [http://127.0.0.1/session]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:35:09) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:35:11) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (0.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 59ms (View: 39, DB: 8) | 200 OK [http://127.0.0.1/today]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:35:11) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-04-25 19:35:13) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://127.0.0.1/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:35:13) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-04-25 19:35:27) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"admin", "password"=>"admin", "login"=>"admin", "email"=>"admin@23.com"}, "commit"=>"注 册", "authenticity_token"=>"zeuQ4m9nFDn70L0ZwIKljiqKoVB+D4rmmRefOPWyHWk="}
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (66.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'admin') LIMIT 1[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'admin@23.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 362ms (View: 23, DB: 72) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:35:28) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-04-25 19:35:36) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://127.0.0.1/login]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:35:36) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-04-25 19:35:42) [POST]
+  Parameters: {"commit"=>"登 录", "authenticity_token"=>"zeuQ4m9nFDn70L0ZwIKljiqKoVB+D4rmmRefOPWyHWk=", "login"=>"kenrome", "password"=>"0020010"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'kenrome' and activated_at IS NOT NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 42ms (View: 13, DB: 1) | 200 OK [http://127.0.0.1/session]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:35:42) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-04-25 19:35:47) [POST]
+  Parameters: {"commit"=>"登 录", "authenticity_token"=>"zeuQ4m9nFDn70L0ZwIKljiqKoVB+D4rmmRefOPWyHWk=", "login"=>"admin", "password"=>"0020010"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (login = 'admin' and activated_at IS NOT NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 46ms (View: 14, DB: 1) | 200 OK [http://127.0.0.1/session]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:35:48) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-04-25 19:37:11) [POST]
+  Parameters: {"user"=>{"password_confirmation"=>"admin", "password"=>"admin", "login"=>"admin", "email"=>"admin@23.com"}, "commit"=>"注 册", "authenticity_token"=>"zeuQ4m9nFDn70L0ZwIKljiqKoVB+D4rmmRefOPWyHWk="}
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`login`) = BINARY 'admin') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'admin@23.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO `users` (`salt`, `updated_at`, `activated_at`, `crypted_password`, `remember_token_expires_at`, `activation_code`, `remember_token`, `login`, `email`, `created_at`) VALUES('4b22782a387d408e5335d565bedc7c90d17aa8cb', '2010-04-25 11:37:11', NULL, '14ea36edb8b98ff005cf93625544efdece179bcb', NULL, '06c2648944e57ff871f55bd815ac781e50ad693d', NULL, 'admin', 'admin@23.com', '2010-04-25 11:37:11')[0m
+  [4;35;1mSQL (30.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/products/
+Completed in 83ms (DB: 36) | 302 Found [http://127.0.0.1/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-04-25 19:37:11) [GET]
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (20.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Completed in 528ms (View: 451, DB: 27) | 200 OK [http://127.0.0.1/products/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2010-04-25 19:37:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;36;1mProduct Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering template within layouts/products
+Rendering products/edit
+Completed in 288ms (View: 212, DB: 14) | 200 OK [http://127.0.0.1/products/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2010-04-25 19:47:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;36;1mProduct Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering template within layouts/products
+Rendering products/edit
+Completed in 118ms (View: 61, DB: 8) | 200 OK [http://127.0.0.1/products/1/edit]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2010-04-25 19:48:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;36;1mProduct Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering template within layouts/products
+Rendering products/edit
+Completed in 139ms (View: 74, DB: 9) | 200 OK [http://127.0.0.1/products/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2010-04-25 19:48:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;36;1mProduct Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering template within layouts/products
+Rendering products/edit
+Completed in 154ms (View: 89, DB: 8) | 200 OK [http://127.0.0.1/products/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#update (for 127.0.0.1 at 2010-04-25 19:48:31) [PUT]
+  Parameters: {"commit"=>"填好了，提交！    希望这单能带来好运！", "authenticity_token"=>"zeuQ4m9nFDn70L0ZwIKljiqKoVB+D4rmmRefOPWyHWk=", "product"=>{"status"=>"1", "discount"=>"2", "details"=>"<p>&nbsp;<span class=\"Apple-style-span\" style=\"font-family: 宋体; font-size: 14px; line-height: 22px; \">【<strong>锅底</strong>】锅底精选鹿茸片熬制，清淡、滋补、养颜，男女老少皆宜。各色锅底，物美价廉、健康美味。本套餐可选尚品银汤或一品麻辣锅，鲜香浓醇，香辣优惠，不容错过。 </span></p>\r\n<p align=\"center\" style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \"><img alt=\"\" style=\"border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-style: initial; border-color: initial; \" src=\"http://www.24quan.com/pic/deal/55/006.jpg\" /></p>\r\n<p style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \">【<strong>肥牛</strong>】肥牛是从意大利进口，有６种之多，其中<strong>极品肥牛</strong>是福成肥牛中的精品，肉片呈大理石花纹状，肉质鲜嫩，入口即化，而肥瘦相间的<strong>肥牛一号角盘</strong>更适合大众消费，加上各式精美菜品，为福成肥牛锦上添花。</p>\r\n<p align=\"center\" style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \"><img alt=\"\" style=\"border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-style: initial; border-color: initial; \" src=\"http://www.24quan.com/pic/deal/55/005.jpg\" /></p>\r\n<p style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \">【<strong>羊肉</strong>】以其配方独特的涮肉调料，精选优质山羊、小绵羊等的上品羊肉，既可抵御风寒，又可滋阴补阳。低廉的价格，精细出品在京城享有赞誉。</p>\r\n<p align=\"center\" style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \"><img alt=\"\" style=\"border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-style: initial; border-color: initial; \" src=\"http://www.24quan.com/pic/deal/55/003.jpg\" /></p>\r\n<p style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \">【<strong>环境</strong>】福成嘉茂 店宽敞豪华，前台格调清晰典雅。店内的小物件妙趣横生，馨香四溢。异乡风情的装饰墙，高树低枝，叶脉流青，令人神往。</p>\r\n<p align=\"center\" style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \"><img alt=\"\" style=\"border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-style: initial; border-color: initial; \" src=\"http://www.24quan.com/pic/deal/55/004.jpg\" /></p>\r\n<p>&nbsp;</p>", "title"=>"仅售32元！价值80元的朝阳门博纳悠唐影城全时段1:1兑换券（可直接兑换3D电影）", "contact"=>"<p>&nbsp;<span class=\"Apple-style-span\" style=\"font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22px; \"><strong>福成福牛</strong><br />\r\n地址：西城区西直门外大街1号嘉茂购物中心4-5楼（<a style=\"cursor: pointer; color: rgb(0, 0, 0); text-decoration: none; \" href=\"http://ditu.google.cn/maps?f=q&amp;source=s_q&amp;hl=zh-CN&amp;geocode=&amp;q=%E8%A5%BF%E7%9B%B4%E9%97%A8%E5%98%89%E8%8C%82%E8%B4%AD%E7%89%A9%E4%B8%AD%E5%BF%83&amp;sll=39.940928,116.352736&amp;sspn=0.003488,0.010525&amp;brcurrent=3,0x35f053b3692cde39:0x53e8f120c1db0e54,0,0x35f0525303f10153:0x6b772a2a053ba4a0%3B5,0,0&amp;ie=UTF8&amp;hq=%E5%98%89%E8%8C%82%E8%B4%AD%E7%89%A9%E4%B8%AD%E5%BF%83&amp;hnear=%E5%8C%97%E4%BA%AC%E5%B8%82%E8%A5%BF%E5%9F%8E%E5%8C%BA%E8%A5%BF%E7%9B%B4%E9%97%A8&amp;ll=39.942844,116.362467&amp;spn=0.029546,0.0842&amp;z=14\"><font color=\"#ff6600\">查看地图</font></a>）<br />\r\n电话：010-58302969&nbsp;<br />\r\n营业时间：10:00-22:00</span></p>", "now_price"=>"23", "started_at(1i)"=>"2010", "ended_at(1i)"=>"2010", "started_at(2i)"=>"4", "base_count"=>"5", "summary"=>"<p>&nbsp;<span class=\"Apple-style-span\" style=\"font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: rgb(102, 102, 102); line-height: 21px; \">不到一份牛肉的价格，就可以品味至尊套餐。吃正宗肥牛，从福成开始。</span></p>", "ended_at(2i)"=>"4", "started_at(3i)"=>"23", "save_price"=>"33", "ended_at(3i)"=>"24", "started_at(4i)"=>"16", "is_publish"=>"1", "picture"=>"http://www.24quan.com/pic/deal/55/001.jpg", "ended_at(4i)"=>"16", "started_at(5i)"=>"38", "comment"=>"<p>&nbsp;<span class=\"Apple-style-span\" style=\"font-family: 宋体; font-size: 14px; line-height: 22px; \">&ldquo;很喜欢的一家火锅店！记得去年来过几回，最后出差了，今天回来就去了。我敢说服务比去年好多了！而且小姑娘们都很可爱，很热情！看来培训的不错！我还是点了我最喜欢的18元的啤酒肥牛！！好像比以前量大了半斤以上吧！&rdquo; </span></p>\r\n<p align=\"right\" style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \">&mdash;&mdash;<a style=\"cursor: pointer; color: rgb(0, 0, 0); text-decoration: none; \" href=\"http://www.dianping.com/shop/2660296#ur\"><font color=\"#ff6600\">东冉神起（大众点评网）</font></a></p>\r\n<p style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \">&ldquo;每人一个精致的小锅，锅底选择较多，鲍鱼汤还有菌汤都不错，很鲜。特别推荐蟹黄虾丸，很好吃，吃起来很有嚼劲，没有添加面粉什么的，感觉一下子吞进去了好几只虾，蟹黄裹在虾球外面，一粒一粒的口感也很不错。&rdquo;</p>\r\n<p align=\"right\" style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \">&mdash;&mdash;<a style=\"cursor: pointer; color: rgb(0, 0, 0); text-decoration: none; \" href=\"http://www.dianping.com/shop/2660296#ur\"><font color=\"#ff6600\">youlanda郑（大众点评网）</font></a></p>\r\n<p style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \">&ldquo;福成肥牛是我经常去吃的火锅，这里的味道不错，我一直都很喜欢，很适合朋友一起去吃。很喜欢那里的刺身羊肉。环境也好，价格有点高，不过也能接受了。&rdquo;</p>\r\n<p align=\"right\" style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \">&mdash;&mdash;<a style=\"cursor: pointer; color: rgb(0, 0, 0); text-decoration: none; \" href=\"http://beijing.koubei.com/store/detail--storeId-f3d8184db35148f78fe67c1659f9eda4\"><font color=\"#ff6600\">938爱我（口碑网）</font></a></p>\r\n<p>&nbsp;</p>", "original_price"=>"234", "ended_at(5i)"=>"38", "total_count"=>"23", "is_ok"=>"1"}, "id"=>"1"}
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (3.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProduct Update (31.0ms)[0m   [0mUPDATE `products` SET `contact` = '<p>&nbsp;<span class=\"Apple-style-span\" style=\"font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22px; \"><strong>福成福牛</strong><br />\r\n地址：西城区西直门外大街1号嘉茂购物中心4-5楼（<a style=\"cursor: pointer; color: rgb(0, 0, 0); text-decoration: none; \" href=\"http://ditu.google.cn/maps?f=q&amp;source=s_q&amp;hl=zh-CN&amp;geocode=&amp;q=%E8%A5%BF%E7%9B%B4%E9%97%A8%E5%98%89%E8%8C%82%E8%B4%AD%E7%89%A9%E4%B8%AD%E5%BF%83&amp;sll=39.940928,116.352736&amp;sspn=0.003488,0.010525&amp;brcurrent=3,0x35f053b3692cde39:0x53e8f120c1db0e54,0,0x35f0525303f10153:0x6b772a2a053ba4a0%3B5,0,0&amp;ie=UTF8&amp;hq=%E5%98%89%E8%8C%82%E8%B4%AD%E7%89%A9%E4%B8%AD%E5%BF%83&amp;hnear=%E5%8C%97%E4%BA%AC%E5%B8%82%E8%A5%BF%E5%9F%8E%E5%8C%BA%E8%A5%BF%E7%9B%B4%E9%97%A8&amp;ll=39.942844,116.362467&amp;spn=0.029546,0.0842&amp;z=14\"><font color=\"#ff6600\">查看地图</font></a>）<br />\r\n电话：010-58302969&nbsp;<br />\r\n营业时间：10:00-22:00</span></p>', `comment` = '<p>&nbsp;<span class=\"Apple-style-span\" style=\"font-family: 宋体; font-size: 14px; line-height: 22px; \">&ldquo;很喜欢的一家火锅店！记得去年来过几回，最后出差了，今天回来就去了。我敢说服务比去年好多了！而且小姑娘们都很可爱，很热情！看来培训的不错！我还是点了我最喜欢的18元的啤酒肥牛！！好像比以前量大了半斤以上吧！&rdquo; </span></p>\r\n<p align=\"right\" style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \">&mdash;&mdash;<a style=\"cursor: pointer; color: rgb(0, 0, 0); text-decoration: none; \" href=\"http://www.dianping.com/shop/2660296#ur\"><font color=\"#ff6600\">东冉神起（大众点评网）</font></a></p>\r\n<p style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \">&ldquo;每人一个精致的小锅，锅底选择较多，鲍鱼汤还有菌汤都不错，很鲜。特别推荐蟹黄虾丸，很好吃，吃起来很有嚼劲，没有添加面粉什么的，感觉一下子吞进去了好几只虾，蟹黄裹在虾球外面，一粒一粒的口感也很不错。&rdquo;</p>\r\n<p align=\"right\" style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \">&mdash;&mdash;<a style=\"cursor: pointer; color: rgb(0, 0, 0); text-decoration: none; \" href=\"http://www.dianping.com/shop/2660296#ur\"><font color=\"#ff6600\">youlanda郑（大众点评网）</font></a></p>\r\n<p style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \">&ldquo;福成肥牛是我经常去吃的火锅，这里的味道不错，我一直都很喜欢，很适合朋友一起去吃。很喜欢那里的刺身羊肉。环境也好，价格有点高，不过也能接受了。&rdquo;</p>\r\n<p align=\"right\" style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \">&mdash;&mdash;<a style=\"cursor: pointer; color: rgb(0, 0, 0); text-decoration: none; \" href=\"http://beijing.koubei.com/store/detail--storeId-f3d8184db35148f78fe67c1659f9eda4\"><font color=\"#ff6600\">938爱我（口碑网）</font></a></p>\r\n<p>&nbsp;</p>', `base_count` = 5, `details` = '<p>&nbsp;<span class=\"Apple-style-span\" style=\"font-family: 宋体; font-size: 14px; line-height: 22px; \">【<strong>锅底</strong>】锅底精选鹿茸片熬制，清淡、滋补、养颜，男女老少皆宜。各色锅底，物美价廉、健康美味。本套餐可选尚品银汤或一品麻辣锅，鲜香浓醇，香辣优惠，不容错过。 </span></p>\r\n<p align=\"center\" style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \"><img alt=\"\" style=\"border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-style: initial; border-color: initial; \" src=\"http://www.24quan.com/pic/deal/55/006.jpg\" /></p>\r\n<p style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \">【<strong>肥牛</strong>】肥牛是从意大利进口，有６种之多，其中<strong>极品肥牛</strong>是福成肥牛中的精品，肉片呈大理石花纹状，肉质鲜嫩，入口即化，而肥瘦相间的<strong>肥牛一号角盘</strong>更适合大众消费，加上各式精美菜品，为福成肥牛锦上添花。</p>\r\n<p align=\"center\" style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \"><img alt=\"\" style=\"border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-style: initial; border-color: initial; \" src=\"http://www.24quan.com/pic/deal/55/005.jpg\" /></p>\r\n<p style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \">【<strong>羊肉</strong>】以其配方独特的涮肉调料，精选优质山羊、小绵羊等的上品羊肉，既可抵御风寒，又可滋阴补阳。低廉的价格，精细出品在京城享有赞誉。</p>\r\n<p align=\"center\" style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \"><img alt=\"\" style=\"border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-style: initial; border-color: initial; \" src=\"http://www.24quan.com/pic/deal/55/003.jpg\" /></p>\r\n<p style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \">【<strong>环境</strong>】福成嘉茂 店宽敞豪华，前台格调清晰典雅。店内的小物件妙趣横生，馨香四溢。异乡风情的装饰墙，高树低枝，叶脉流青，令人神往。</p>\r\n<p align=\"center\" style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \"><img alt=\"\" style=\"border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-style: initial; border-color: initial; \" src=\"http://www.24quan.com/pic/deal/55/004.jpg\" /></p>\r\n<p>&nbsp;</p>', `updated_at` = '2010-04-25 11:48:31' WHERE `id` = 1[0m
+  [4;36;1mSQL (70.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/products/1
+Completed in 198ms (DB: 115) | 302 Found [http://127.0.0.1/products/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-04-25 19:48:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;35;1mProduct Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering template within layouts/products
+Rendering products/show
+Completed in 112ms (View: 38, DB: 14) | 200 OK [http://127.0.0.1/products/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-04-25 19:49:09) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (1.0ms)
+Rendered layouts/_sidebar (0.0ms)
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Rendered layouts/_header (39.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 102ms (View: 76, DB: 12) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-25 19:49:10) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
