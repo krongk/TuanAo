@@ -1,0 +1,38 @@
+<%#
+# 4.23:切换城市暂时隐藏
+# and open the template in the editor.
+%>
+<div id="header" role="banner">
+  <div id="topnav" role="contentinfo">
+    <a href="#">» 邮件订阅每日最新团购</a> | <a href="#">  » 邀请好友赠送10个积分</a>
+  </div>
+  <h1><img src="/images/logo2.png" height="50" alt="Tuanao.com" title="城市每日团购生活" /> </h1>
+
+  <div id="chcity">
+    <div class="guides">
+      <div class="city">
+        <h2>成都</h2>
+      </div>
+      <div id="guides-city-change" class="change" style="display:none;">切换城市</div>
+      <div id="guides-city-list" class="city-list">
+        <ul>
+          <li><a href="beijing.html">北京</a></li><li><a href="shanghai.html">上海</a></li><li><a href="guangzhou.html">广州</a></li><li><a href="shenzhen.html">深圳</a></li><li><a href="hangzhou.html">杭州</a></li><li><a href="nanjing.html">南京</a></li><li><a href="wuhan.html">武汉</a></li><li class="current"><a href="chengdu.html">成都</a></li><li><a href="tianjin.html">天津</a></li><li><a href="xian.html">西安</a></li><li><a href="fuzhou.html">福州</a></li><li><a href="chongqing.html">重庆</a></li><li><a href="xiamen.html">厦门</a></li><li><a href="qingdao.html">青岛</a></li><li><a href="dalian.html">大连</a></li>                    </ul>
+        <div class="other"><a href="maillist/subscribe/new.html">其他城市？</a></div>
+      </div>
+    </div></div><!--change city end-->
+</div>
+<div id="nav" role="navigation">
+  <div class="hlist">
+    <!-- main navigation: #nav_main -->
+    <ul>
+      <li><a href="/today">今日团购</a></li>
+      <li><a href="/tomorrow">明日团购</a></li>
+      <li><a href="/yesterday">往日团购</a></li>
+      <!--<li><a href="/city/beijing">同城团购</a></li>-->
+    </ul>
+    <% if current_user %>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;你好，<%=current_user.login%>&nbsp;&nbsp;<a href="/logout">退出</a></span>
+    <% else -%>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/login">登录</a>&nbsp;&nbsp;<a href="/signup">注册</a></span>
+    <% end -%> <%=session[:return_to]%></div>
+</div>

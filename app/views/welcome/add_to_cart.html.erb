@@ -1,0 +1,9 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+<p><%=flash[:notice]%></p>
+<% for item in @cart.items %>
+<p><%= item.title %>| <%= item.quantity %> </p>
+<% end %>
+<%= button_to "清空购物车", :action=> :empty_cart %>

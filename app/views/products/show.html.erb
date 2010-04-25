@@ -1,0 +1,88 @@
+<p>
+  <b>Title:</b>
+  <%=h @product.title %>
+</p>
+
+<p>
+  <b>Total count:</b>
+  <%=h @product.total_count %>
+</p>
+
+<p>
+  <b>Sold count:</b>
+  <%=h @product.sold_count %>
+</p>
+
+<p>
+  <b>Original price:</b>
+  <%=h @product.original_price %>
+</p>
+
+<p>
+  <b>Discount:</b>
+  <%=h @product.discount %>
+</p>
+
+<p>
+  <b>Now price:</b>
+  <%=h @product.now_price %>
+</p>
+
+<p>
+  <b>Save price:</b>
+  <%=h @product.save_price %>
+</p>
+
+<p>
+  <b>Started at:</b>
+  <%=h @product.started_at %>
+</p>
+
+<p>
+  <b>Ended at:</b>
+  <%=h @product.ended_at %>
+</p>
+
+<p>
+  <b>Picture:</b>
+  <%=h @product.picture %>
+</p>
+
+<p>
+  <b>Summary:</b>
+  <%=h @product.summary %>
+</p>
+
+<p>
+  <b>Details:</b>
+  <%=h @product.details %>
+</p>
+
+<p>
+  <b>Contact:</b>
+  <%=h @product.contact %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%=h @product.comment %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @product.status %>
+</p>
+
+<p>
+  <b>Is publish:</b>
+  <%=h @product.is_publish %>
+</p>
+
+<p>
+  <b>Is ok:</b>
+  <%=h @product.is_ok %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>

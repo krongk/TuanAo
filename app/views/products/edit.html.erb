@@ -1,0 +1,80 @@
+<h1>Editing product</h1>
+
+<% form_for(@product) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :total_count %><br />
+    <%= f.text_field :total_count %>
+  </p>
+  <p>
+    <%= f.label :sold_count %><br />
+    <%= f.text_field :sold_count %>
+  </p>
+  <p>
+    <%= f.label :original_price %><br />
+    <%= f.text_field :original_price %>
+  </p>
+  <p>
+    <%= f.label :discount %><br />
+    <%= f.text_field :discount %>
+  </p>
+  <p>
+    <%= f.label :now_price %><br />
+    <%= f.text_field :now_price %>
+  </p>
+  <p>
+    <%= f.label :save_price %><br />
+    <%= f.text_field :save_price %>
+  </p>
+  <p>
+    <%= f.label :started_at %><br />
+    <%= f.datetime_select :started_at %>
+  </p>
+  <p>
+    <%= f.label :ended_at %><br />
+    <%= f.datetime_select :ended_at %>
+  </p>
+  <p>
+    <%= f.label :picture %><br />
+    <%= f.text_field :picture %>
+  </p>
+  <p>
+    <%= f.label :summary %><br />
+    <%= f.text_area :summary %>
+  </p>
+  <p>
+    <%= f.label :details %><br />
+    <%= f.text_area :details %>
+  </p>
+  <p>
+    <%= f.label :contact %><br />
+    <%= f.text_area :contact %>
+  </p>
+  <p>
+    <%= f.label :comment %><br />
+    <%= f.text_area :comment %>
+  </p>
+  <p>
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </p>
+  <p>
+    <%= f.label :is_publish %><br />
+    <%= f.check_box :is_publish %>
+  </p>
+  <p>
+    <%= f.label :is_ok %><br />
+    <%= f.check_box :is_ok %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @product %> |
+<%= link_to 'Back', products_path %>

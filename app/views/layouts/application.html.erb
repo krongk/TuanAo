@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>tuanao</title>
+    <!-- add your meta tags here -->
+    <link href="/css/layout.css" rel="stylesheet" type="text/css" />
+    <!--[if lte IE 7]>
+    <link href="/css/patches/patch_equal_heights.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <%= stylesheet_link_tag 'scaffold' %>
+    <%= javascript_include_tag "/js/lib/jquery-1.3.2.js" %>
+  </head>
+  <body>
+    <!-- skip link navigation -->
+    <ul id="skiplinks">
+      <li><a class="skip" href="#nav">Skip to navigation (Press Enter).</a></li>
+      <li><a class="skip" href="#col1">Skip to main content (Press Enter).</a></li>
+    </ul>
+
+    <div class="page_margins"><div class="page">
+        <%=render :partial=>'layouts/header'%>
+
+        <div id="main">
+          <%= yield %>
+        </div> </div></div>
+
+    <%=render :partial=>'layouts/footer'%>
+
+    <%=render :partial=>'layouts/foot_js'%>
+  </body>
+</html>

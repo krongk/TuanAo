@@ -1,0 +1,25 @@
+<div class="box-content" id="about">
+  <div class="head"><h2>提供团购信息</h2></div>
+  <div class="sect">
+    <p class="notice">特别欢迎优质商家、淘宝大卖家提供团购信息。</p>
+    <% form_for(@seller) do |f| %>
+      <%= f.error_messages %>
+
+      <p>
+        <%= f.label :name,"您的称呼" %>：
+        <%= f.text_field :name %>
+      </p>
+      <p>
+        <%= f.label :contact,"联系方式" %>：
+        <%= f.text_field :contact %> <span class="hint">请留下您的手机、QQ号或邮箱，以方便联系</span>
+      </p>
+      <p>
+        <%= f.label :info,"团购信息:" %><br />
+        <%= f.text_area :info,:cols=>65,:rows=>8 %>
+      </p>
+      <p>
+        <%= f.submit '提 交' %>
+      </p>
+    <% end %>
+  </div>
+</div>

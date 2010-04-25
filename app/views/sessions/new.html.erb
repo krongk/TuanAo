@@ -1,0 +1,19 @@
+<div id="about" style="float: left;margin:0 40px 0 120px; padding: 45px; background-color:#66cccc; ">
+<% form_tag session_path,:class=>'yform' do -%>
+  <div class="head"><h2 style="color:#666;font-size: 1.4em;">已有团奥帐户？</h2></div>
+<p><label for="login">登录名：</label>
+<%= text_field_tag 'login' %></p>
+
+<p><label for="password">密&nbsp;&nbsp;&nbsp;&nbsp;码：</label>
+<%= password_field_tag 'password' %></p>
+
+<!-- Uncomment this if you want this functionality
+<p><label for="remember_me">Remember me:</label>
+<%= check_box_tag 'remember_me' %></p>
+-->
+
+<p><%= submit_tag '登 录' %></p>
+<% end -%>
+</div>
+<%= render :file=>'users/new' %>
+

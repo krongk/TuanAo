@@ -1,0 +1,124 @@
+<!-- begin: #col1 - first float column -->
+<div id="col1" role="complementary">
+  <div class="twoColFixLt">    <div id="container">
+      <h1 class="ptitle"><span >今日团购</span>：<%= @product.title %></h1>
+      <div id="sidebar1">
+        <div class="dbox">
+          <div class="buy">
+            <table width="100%" border="0">
+              <tr>
+                <td width="46%" height="90" align="right"><span class="price"><%=number_to_currency(@product.now_price)%></span></td>
+                <td width="54%"><form action="/welcome/add_to_cart/<%=@product.id%>" method="post">
+                  <%= image_submit_tag "/images/bt_buy.gif" %>
+                  <%= tag(:input, :type => "hidden", :name =>request_forgery_protection_token.to_s, :value =>form_authenticity_token) %> </form>
+
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="price_list"><div class="content">
+            <table width="100%" border="0" align="center">
+              <tr align="center" height="30">
+                <td>原价</td>
+                <td>折扣</td>
+                <td>节省金额</td>
+              </tr>
+              <tr align="center">
+                <td><strong><%=number_to_currency(@product.original_price)%></strong>元 </td>
+                <td> <%=@product.discount%>折 </td>
+                <td> <%=number_to_currency(@product.save_price)%>元 </td>
+              </tr>
+            </table>
+          </div></div>
+        </div>
+        <div class="dbox"><div class="content">
+          <h3>剩余时间</h3>
+          <div class="time">
+         <table width="100%">
+            <tr class="show" align="center"><td width="33%"><em id="RemainH">&nbsp;</em></td><td width="34%"><em id="RemainM">&nbsp;</em></td><td width="33%"><em id="RemainS">&nbsp;</em></td></tr>
+            <tr align="center"><td>小时</td><td>分钟</td><td>秒</td></tr>
+           </table>
+          </div>
+        </div></div>
+   <div class="dbox">
+      <div class="content"><div class="sall_status">
+        <h3><strong>5</strong> 人已购买</h3>
+        <div class="slider"></div>
+        <div class="scroll"><img src="images/scroll3.png" width="100%"/></div>
+        <div class="discount">
+          <div>0</div>
+          <div class="distop">10</div>
+        </div>
+        <p><br/>本次团购的最低团购人数是: 30人</p>
+      </div>
+    </div></div>
+        <!-- end #sidebar1 --></div>
+      <div id="mainContent">
+        <div class="img"><IMG src="<%=@product.picture%>" width="380"></div>
+        <h2><%=@product.summary%></h2>
+
+        <!-- end #mainContent --></div>
+ <%= render :partial=>'layouts/share' %>
+     <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+      <!-- end #container --></div>
+  </DIV>
+
+  <div class="twoColMain">
+    <div id="container">
+      <div id="mainBody">
+        <p><%=@product.details%></p>
+        <p><%=@product.comment%></p>
+      </div>
+      <div id="mainSide"><div class="centent">
+          <%=@product.contact%>
+        </div></div>
+    </div></div>
+
+</div>
+<!-- end: #col1 -->
+<!-- begin: #col3 static column -->
+<div id="col3" role="main">
+  <div id="col3_content" class="clearfix">
+    <div class="info"><!--side bar start-->
+     <%=render :partial=>'layouts/sidebar'%>
+      <!--side bar end--></div>
+  </div>
+  <div id="ie_clearing">&nbsp;</div>
+  <!-- End: IE Column Clearing -->
+</div>
+<!-- end: #col3 -->
+</div>
+
+<!--计时器-->
+<script language="JavaScript">
+var overDate = 1273038404000;//截止时间
+var Ntime=1272026099000;
+var NowTime = new Date(Ntime);
+var EndTime= new Date(overDate);
+function GetRTime(){
+	NowTime = new Date();
+	var nMS=EndTime.getTime() - NowTime.getTime();
+	var nD=Math.floor(nMS/(1000 * 60 * 60 * 24))*24;
+	var nH=Math.floor(nMS/(1000*60*60)) % 24+nD;
+	var nM=Math.floor(nMS/(1000*60)) % 60;
+	var nS=Math.floor(nMS/1000) % 60;
+	var nMS=Math.floor(nMS/100) % 10;
+	if(nD>= 0){
+		//document.getElementById("RemainD").innerHTML=nD;
+		document.getElementById("RemainH").innerHTML=nH;
+		document.getElementById("RemainM").innerHTML=nM;
+		document.getElementById("RemainS").innerHTML=nS;
+	}
+	else {
+		//document.getElementById("CountMsg").innerHTML="<dt>已过期！</dt>";
+		document.getElementById("RemainH").innerHTML=0;
+		document.getElementById("RemainM").innerHTML=0;
+		document.getElementById("RemainS").innerHTML=0;
+	}
+	setTimeout("GetRTime()",100);
+}
+$(document).ready(function(){
+  GetRTime();
+});
+</script>
+

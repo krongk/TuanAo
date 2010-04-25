@@ -1,0 +1,39 @@
+#admin {
+	width:1000px;
+	margin:0 auto;
+	text-align: left;
+}
+#admin .content1 {
+	width:1000px;
+}
+#admin .content2 {
+	width:800px;
+}
+#admin .title {
+	background-color: #933;
+	width: 780px;
+	padding: 4px;
+	border: 1px solid #900;
+	font-family: "微软雅黑";
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #FFF;
+}
+#admin .set {
+	background-color: #DFDBD2;
+	width: 60em;
+	padding: 20px;
+	border: 1px solid #900;
+}
+input {
+	size: 20;
+	font-family: "微软雅黑";
+	line-height: 25px;
+	vertical-align: middle;
+}
+.input_big {
+	size: 60;
+	font-family: "微软雅黑";
+	line-height: 25px;
+	vertical-align: middle;
+}
