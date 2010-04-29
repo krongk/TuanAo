@@ -3,14 +3,15 @@ class User < ActiveRecord::Base
   # Virtual attribute for the unencrypted password
   attr_accessor :password
 
-  validates_presence_of     :login, :email
-  validates_presence_of     :password,                   :if => :password_required?
-  validates_presence_of     :password_confirmation,      :if => :password_required?
-  validates_length_of       :password, :within => 4..40, :if => :password_required?
-  validates_confirmation_of :password,                   :if => :password_required?
-  validates_length_of       :login,    :within => 3..40
-  validates_length_of       :email,    :within => 3..100
-  validates_uniqueness_of   :login, :email, :case_sensitive => false
+  validates_presence_of     :login, :email,              :message=>"登录名和邮箱不能为空"
+  validates_presence_of     :password,                   :if => :password_required?,   :message=>"密码不能为空"
+  validates_presence_of     :password_confirmation,      :if => :password_required?,   :message=>"确认密码不能为空"
+  validates_length_of       :password, :within => 4..40, :if => :password_required?,   :message=>"密码长度不够,密码至少为4位"
+  validates_confirmation_of :password,                   :if => :password_required?,      :message=>"两次输入的密码不匹配"
+  validates_length_of       :login,    :within => 3..40, :message=>"登录名的长度至少为3"
+  validates_length_of       :email,    :within => 3..100, :message=>"电子邮件长度或格式不正确"
+  validates_uniqueness_of   :login, :email, :case_sensitive => false, :message=>"对不起，你所使用的登录名已被占用，请换一个试试"
+  validates_uniqueness_of   :email, :case_sensitive => false, :message=>"对不起，你所使用的电子邮箱已被占用，请换一个试试"
   before_save :encrypt_password
   before_create :make_activation_code 
   # prevents a user from submitting a crafted form that bypasses activation
@@ -32,7 +33,8 @@ class User < ActiveRecord::Base
 
   # Authenticates a user by their login name and unencrypted password.  Returns the user or nil.
   def self.authenticate(login, password)
-    u = find :first, :conditions => ['login = ? and activated_at IS NOT NULL', login] # need to get the salt
+    #u = find :first, :conditions => ['login = ? and activated_at IS NOT NULL', login] # need to get the salt
+    u = find :first, :conditions => ['login = ?', login] # need to get the salt
     u && u.authenticated?(password) ? u : nil
   end
 

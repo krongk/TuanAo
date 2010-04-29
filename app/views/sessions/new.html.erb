@@ -1,5 +1,9 @@
+<% if flash[:notice] %>
+<div class="warning"><%=flash[:notice] %></div>
+<% end %>
+
 <div id="about" style="float: left;margin:0 40px 0 120px; padding: 45px; background-color:#66cccc; ">
-<% form_tag session_path,:class=>'yform' do -%>
+<% form_tag session_path,:class=>"yform full", :role=>"application" do -%>
   <div class="head"><h2 style="color:#666;font-size: 1.4em;">已有团奥帐户？</h2></div>
 <p><label for="login">登录名：</label>
 <%= text_field_tag 'login' %></p>

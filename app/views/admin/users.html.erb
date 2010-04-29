@@ -1,0 +1,31 @@
+<h1>用户注册列表</h1>
+<div class="content1">
+<table width="100%" bgcolor="#fff" border="1">
+  <tr>
+    <th colspan="3">菜单</th>
+    <th>编号</th>
+    <th>登录名</th>
+    <th>电子邮箱</th>
+
+    <th>留言时间</th>
+
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+     <td><%= link_to '详细', user %></td>
+    <td><%= link_to '修改', edit_user_path(user) %></td>
+    <td><%= link_to '删除', user, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%=h user.id %></td>
+    <td><%=h user.login %></td>
+    <td><%=h user.email %></td>
+    <td><%=h format_datetime(user.created_at) %></td>
+
+  </tr>
+<% end %>
+</table>
+
+<br />
+<%=link_to "返回主菜单", "/admin"%>
+</div>
+

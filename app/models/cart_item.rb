@@ -17,6 +17,14 @@ class CartItem
     @product.title
   end
 
+  def id
+    @product.id
+  end
+
+  def now_price
+    @product.now_price
+  end
+
   def price
     @product.now_price * @quantity
   end

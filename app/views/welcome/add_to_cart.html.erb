@@ -1,9 +1,64 @@
-<%#
-# To change this template, choose Tools | Templates
-# and open the template in the editor.
-%>
-<p><%=flash[:notice]%></p>
-<% for item in @cart.items %>
-<p><%= item.title %>| <%= item.quantity %> </p>
-<% end %>
-<%= button_to "清空购物车", :action=> :empty_cart %>
+<center>
+<link href="/stylesheets/order.css" rel="stylesheet" type="text/css" />
+<form id="form1" class="yform full" name="form1" method="post" action="/add_to_order" onsubmit="return check_quantity();">
+  <fieldset class="set">
+    <legend class="title">填写订单</legend>
+  <table width="700" border="0">
+    <tr>
+      <td class="bg_title" width="343" height="37">产品</td>
+      <td class="bg_title" width="77">单价</td>
+      <td class="bg_title" width="51">&nbsp;</td>
+      <td class="bg_title" width="109">数量</td>
+      <td class="bg_title" width="98">&nbsp;</td>
+    </tr>
+<% for item in @cart.items do %>
+    <input type="hidden" name="product_id" value="<%=item.id%>"/>
+    <tr>
+      <td rowspan="2"><%=h item.title%></td>
+      <td class="bg_title" height="47">￥<span id="product_now_price"><%=h item.now_price %></span></td>
+      <td class="bg_title" >×</td>
+      <td class="bg_title" >
+        <input name="quantity" type="text" id="product_quantity" value="1" size="5" maxlength="5" onchange="check_quantity();" />
+      	<span id="quantity_msg"></span>
+       </td>
+      <td class="bg_title" ><span id="product_total_price">&nbsp;</span></td>
+    </tr>
+ <% end %>
+    <tr>
+      <td height="44">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td class="bg_title" ><span id="order_txt">应付金额:￥</span></td>
+      <td class="bg_title" ><span id="order_price1"><input type="input" readonly="readonly" id="order_price"  name="order_price" value="<%= item.price %>"/></span>
+      </td>
+    </tr>
+    <tr>
+      <td height="46" colspan="5" align="center">
+        <input type="submit" name="提交" id="submit" value="确定" />      </td>
+</tr>
+  </table>
+  </fieldset>
+   <%= tag(:input, :type => "hidden", :name =>request_forgery_protection_token.to_s, :value =>form_authenticity_token) %>
+</form>
+<script language="javascript">
+function check_quantity(){
+  //alert(q);
+  var q=document.getElementById("product_quantity").value;
+  document.getElementById("product_quantity").style.color="#000";
+  var now_price = document.getElementById("product_now_price").innerHTML;
+  //alert(now_price);
+  //var total_price = document.getElementById("product_total_price").innerHTML;
+  //alert(total_price);
+  var order_price = document.getElementById("order_price").value;
+  //alert(order_price);
+  var total = eval(q*now_price);
+  if(total*1 != total){
+	document.getElementById("product_quantity").style.color="#f60";
+  	alert("请输入合法数字");return false;
+  }else{
+	  //document.getElementById("product_total_price").innerHTML=total;
+	  document.getElementById("order_price").value=total;
+	  return true;
+  }
+}
+</script>
+</center>

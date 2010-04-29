@@ -12,9 +12,10 @@ class SessionsController < ApplicationController
         current_user.remember_me unless current_user.remember_token?
         cookies[:auth_token] = { :value => self.current_user.remember_token , :expires => self.current_user.remember_token_expires_at }
       end
-      redirect_back_or_default("/")
+      redirect_to(session[:back_to] || '/')
       flash[:notice] = "登录成功！"
     else
+      flash[:notice] = "用户名或密码错误,请检查"
       render :action => 'new'
     end
   end

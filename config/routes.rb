@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :orders
+
   map.resources :feedbacks
   map.resources :sellers
   map.resources :users
@@ -46,6 +48,8 @@ ActionController::Routing::Routes.draw do |map|
   map.today     '/today',    :controller => "welcome",:action=>'today'
   map.tomorrow  '/tomorrow',  :controller => "welcome",:action=>'tomorrow'
   map.yesterday '/yesterday', :controller => "welcome",:action=>'yesterday'
+  map.add_to_cart '/add_to_cart', :controller=>'welcome',:action=>'add_to_cart'
+  map.add_to_order '/add_to_order',:controller=>'welcome',:action=>'add_to_order'
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.

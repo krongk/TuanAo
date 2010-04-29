@@ -1,0 +1,41 @@
+<h1>Editing order</h1>
+
+<% form_for(@order) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :user %><br />
+    <%= f.text_field :user %>
+  </p>
+  <p>
+    <%= f.label :product %><br />
+    <%= f.text_field :product %>
+  </p>
+  <p>
+    <%= f.label :quantity %><br />
+    <%= f.text_field :quantity %>
+  </p>
+  <p>
+    <%= f.label :discount %><br />
+    <%= f.text_field :discount %>
+  </p>
+  <p>
+    <%= f.label :order_price %><br />
+    <%= f.text_field :order_price %>
+  </p>
+  <p>
+    <%= f.label :is_pay %><br />
+    <%= f.check_box :is_pay %>
+  </p>
+ <p>
+    <%= f.label :pay_type,"请选择支付方式" %>
+    <%= f.text_field :pay_type %>
+    <a href="http://pay3.chinabank.com.cn/Payto?v_mid=21701769"><img src="http://merchant3.chinabank.com.cn/images/button_1.gif"/>网银在线支付</a>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @order %> |
+<%= link_to 'Back', orders_path %>

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100424152556) do
+ActiveRecord::Schema.define(:version => 20100426060937) do
 
   create_table "feedbacks", :force => true do |t|
     t.string   "name"
@@ -17,6 +17,18 @@ ActiveRecord::Schema.define(:version => 20100424152556) do
     t.text     "message"
     t.boolean  "is_check"
     t.text     "note"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "orders", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "product_id"
+    t.integer  "quantity"
+    t.float    "discount"
+    t.float    "order_price"
+    t.boolean  "is_pay"
+    t.integer  "pay_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
