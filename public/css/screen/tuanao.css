@@ -1,7 +1,7 @@
 .twoColFixLt #container { 
 	float:left;
 	position:relative;
-	width: 700px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	width: 680px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
 	background: #FFFFFF;
 	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
 	border: 2px solid #66cccc;
@@ -19,7 +19,7 @@
 } 
 
 .twoColMain #container { 
-	width: 700px; 
+	width: 680px; 
 	position:relative;
 	float:left;/* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
 	background: #FFFFFF;
@@ -170,12 +170,9 @@
 #city{
 	font-family: "微软雅黑";
 	background-color:#FFF;
-	margin:0 -10px;
-	padding:0 10px;
-	position:relative;
-	display:inline-block;
-	float: left;
-	width: 100%;
+	
+	padding:10px;
+	
 }
 #city ul {
 	margin: 0px;
@@ -186,7 +183,7 @@
 	float: left;
 	border: 1px solid #CCC;
 	padding: 8px;
-	width: 312px;
+	width: 302px;
 	height: 200px;
 	margin-top: 0px;
 	margin-right: 8px;
@@ -259,6 +256,7 @@
 #maillist,
 #about {
 	font-family: "微软雅黑";
+	padding:10px;
 }
 #about .head {
 	border-bottom-width: 1px;

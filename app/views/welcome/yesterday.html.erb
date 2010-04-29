@@ -1,5 +1,5 @@
-  <div id="city">
-    
+<div id="col1" role="complementary">
+  <div class="twoColFixLt"> <div id="container"><div id="city">
     <ul>
      <li>
       <h3>2010年4月24日</h3>
@@ -46,6 +46,18 @@
       </div>
 
      </li>
-
     </ul>
+  </div></div></div>
+</div>
+<!-- end: #col1 -->
+<!-- begin: #col3 static column -->
+<div id="col3" role="main">
+  <div id="col3_content" class="clearfix">
+   <!--side bar start-->
+      <%=render :partial=>'layouts/sidebar'%>
+      <!--side bar end-->
   </div>
+  <div id="ie_clearing">&nbsp;</div>
+  <!-- End: IE Column Clearing -->
+</div>
+<!-- end: #col3 -->

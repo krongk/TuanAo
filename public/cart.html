@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>Equal Heights with YAML's subtemplates</title>
+<!-- add your meta tags here -->
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 7]>
+<link href="css/patches/patch_equal_heights.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<link href="stylesheets/order.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!-- skip link navigation -->
+<ul id="skiplinks">
+	<li><a class="skip" href="#nav">Skip to navigation (Press Enter).</a></li>
+	<li><a class="skip" href="#col1">Skip to main content (Press Enter).</a></li>
+</ul>
+
+<div class="page_margins">
+  <div class="page">
+    <div id="header" role="banner">
+      <div id="topnav" role="contentinfo">
+        <a href="#">» 邮件订阅每日最新团购</a> | <a href="#">  » 邀请好友赠送10个积分</a> 
+      </div>
+      <h1><img src="images/logo2.png" height="50" alt="Tuanao.com" /> </h1>
+      
+      <div id="chcity">
+       <div class="guides">
+                <div class="city">
+                    <h2>成都</h2>
+                </div>
+                <div id="guides-city-change" class="change">切换城市</div>
+                <div id="guides-city-list" class="city-list">
+                    <ul>
+                    <li><a href="beijing.html">北京</a></li><li><a href="shanghai.html">上海</a></li><li><a href="guangzhou.html">广州</a></li><li><a href="shenzhen.html">深圳</a></li><li><a href="hangzhou.html">杭州</a></li><li><a href="nanjing.html">南京</a></li><li><a href="wuhan.html">武汉</a></li><li class="current"><a href="chengdu.html">成都</a></li><li><a href="tianjin.html">天津</a></li><li><a href="xian.html">西安</a></li><li><a href="fuzhou.html">福州</a></li><li><a href="chongqing.html">重庆</a></li><li><a href="xiamen.html">厦门</a></li><li><a href="qingdao.html">青岛</a></li><li><a href="dalian.html">大连</a></li>                    </ul>
+                    <div class="other"><a href="maillist/subscribe/new.html">其他城市？</a></div>
+                </div>
+            </div></div><!--change city end-->
+      
+      </div>
+    <div id="nav" role="navigation">
+      <div class="hlist">
+        <!-- main navigation: #nav_main -->
+        <ul>
+          <li><a href="../index.html">今日团购</a></li>
+          <li><a href="../07_layouts_advanced_2/fullpage_3col.html">明日团购</a></li>
+          <li><a href="flexible_grids2.html">往日团购</a></li>
+          <li><a href="flexible_grids2.html">同城团购</a></li>
+        </ul>
+       <span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="@">登录</a>&nbsp;&nbsp;<a href="@">注册</a></span>      </div>
+    </div>
+   <div id="main">
+   <!--头部文件结束-->
+<SCRIPT type="text/javascript">
+$(function(){
+	jQuery.validator.addMethod("isMobile", function(value, element) {    
+		  var length = value.length;    
+		  return this.optional(element) || (length == 11 && /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/.test(value));    
+		}, "请正确填写您的手机号码");
+	jQuery.validator.addMethod("isName", function(value, element) {    
+		  return this.optional(element) || (/^[^0-9]*$/.test(value));    
+		}, "请正确填写您的姓名");
+	$('#ordersform').validate({
+		rules: {
+			amount:{
+				required: true,
+				digits: true,
+				min: 1
+			},
+			r_name: {
+				isName: true,
+				required: true
+			},
+			r_mobile:{
+				required: true,
+				minlength: 11,
+				digits: true
+			},
+			r_address: "required",
+			r_date: "required"
+		},
+		messages: {
+			amount: {
+				required: function(){$("#amount_pop_message").html('请输入合法数量');$("#openlayer1").show();},
+				digits: function(){$("#amount_pop_message").html('请输入合法数量');$("#openlayer1").show();},
+				min: function(){$("#amount_pop_message").html('请最少购买1件商品');$("#openlayer1").show();}
+			},
+			r_name: {
+				isName: "姓名不能为数字，请填写真实姓名",
+				required: "请填写收货人姓名"
+			},
+			r_mobile: {
+				required: "请填写收货人手机号码",
+				minlength: "请填写合法的手机号码",
+				digits: "请填写合法的手机号码"
+			},
+			r_address: "请填写收货人地址",
+			r_date: {
+				required: function(){alert("请选择发货日期")}
+			}
+		},
+		submitHandler: function(form){
+			if($("#form_error").val() == 0){
+				$("#submit_but").attr("disabled","true");
+				form.submit();
+			}
+			else{
+				$("#amount").focus();
+				alert("请填入合法的购买数量");
+			}
+		}
+	});
+})
+</SCRIPT><DIV class="liuc">
+	<FORM id="ordersform" method="post" action="http://ftuan.com/orders_reg/create">
+	<DIV class="liuc_l">
+		<DIV class="l_top"></DIV>
+		<DIV class="liuc_area">
+			<H4>填写订单</H4>
+						<DIV class="liuc_tab01">
+				<DIV class="liuc_tab_piao" id="openlayer1" style="display:none">
+					<H5 onclick="javascript:$(this).parent().hide()" style="cursor:pointer"><IMG src="images/close2.gif"></H5>
+					<P id="amount_pop_message"></P>
+				</DIV>
+						<UL>
+					<LI class="liuc_tab01_one">产 品</LI>
+					<LI class="liuc_tab01_two">单 价</LI>
+					<LI class="liuc_tab01_three">　</LI>
+					<LI class="liuc_tab01_four">数 量</LI>
+					<LI class="liuc_tab01_five">总 价</LI>
+				</UL>
+				<DIV class="liuc_tab01_line1"></DIV>
+				<UL>
+					<LI class="liuc_tab01_six">仅280元，原价3000元，星座小王子亲算你的2010年星座感情运势</LI>
+					<LI class="liuc_tab01_two f18">￥280</LI>
+					<LI class="liuc_tab01_three f18">×</LI>
+					<LI class="liuc_tab01_four f18"><INPUT type="text" class="liuc_input3" name="amount" id="amount" value="1" onchange="update_amount()"></LI>
+					<LI class="liuc_tab01_five f18"><SPAN id="total_price">￥280</SPAN></LI>
+				</UL>
+							<DIV class="liuc_tab01_line1"></DIV>
+				<UL>
+					<LI class="liuc_tab01_six">
+					<LI class="liuc_tab01_two f18">
+					<LI class="liuc_tab01_three f18">
+					<LI class="liuc_tab01_seven f12 text5">应付金额</LI>
+					<LI class="liuc_tab01_five f18 text5"><SPAN id="pay_total">￥280</SPAN></LI>
+				</UL>
+				<DIV class="clear"></DIV>
+			</DIV>
+			<DIV class="blank10"></DIV>
+			<INPUT type="hidden" value="1" name="hidden_target" id="hidden_target">
+<SCRIPT type="text/javascript">
+<!--
+function r_name_Empty(){
+	var r_name = $('#r_name').val();
+	if(r_name == "如：张飞"){
+		$('#r_name').val('');
+	}
+}
+function r_mobile_Empty(){
+	var r_mobile = $('#r_mobile').val();
+	if(r_mobile == "如：13801234567"){
+		$('#r_mobile').val('');
+	}
+}
+function r_address_Empty(){
+	var r_address = $('#r_address').val();
+	if(r_address == "如：北京市东城区东四十条50号   邮编:100000"){
+		$('#r_address').val('');
+	}
+}
+//-->
+</SCRIPT>
+			<DIV class="liuc_tab02" id="r_open_address">
+			<DL>
+				<DT id="dt_name">您的姓名:</DT>
+				<DD><INPUT id="r_name" name="r_name" type="text" class="liuc_input1" value="如：张飞" onclick="r_name_Empty()"></DD>
+				<EM class="text5" id="liuc_tab01">请填写真实姓名，身份证是您到店消费的凭证</EM>
+			</DL>
+			<DL>
+				<DT id="dt_mobile">您的手机:</DT>
+				<DD><INPUT id="r_mobile" name="r_mobile" type="text" class="liuc_input1" value="如：13801234567" onclick="r_mobile_Empty()" maxlength="11"></DD>
+				<EM id="liuc_tab02">请正确填写您的手机号，及时获得发货通知或消费通知！</EM>
+			</DL>
+		</DIV>
+	
+
+
+
+			<DIV class="blank10"></DIV>
+						<DIV class="liuc_tab_but"><INPUT type="submit" class="liuc_but1" id="submit_but" value="确认"></DIV>
+		</DIV>
+		<DIV class="l_bot"></DIV>
+	</DIV>
+	
+	<DIV class="liuc_r">
+		<DIV class="liuc_r_cont1" id="friends_address">
+			<H3>我要送给朋友</H3>
+			<P>请<EM><A href="javascript:void(0)" onclick="friend_address()">点击这里</A></EM></P>
+		</DIV>
+		<DIV class="liuc_r_cont1" style="display: none;" id="self_address">
+			<H3>我要买给自己</H3>
+			<P>请<EM><A href="javascript:void(0)" onclick="self_address()">点击这里</A></EM></P>
+		</DIV>
+		<DIV class="blank25"></DIV>
+			</DIV>
+	
+	<INPUT type="hidden" id="pid" name="pid" value="37">
+	<INPUT type="hidden" id="form_error" name="form_error" value="0">
+	</FORM>
+</DIV>
+   </div>
+    <!-- begin: #foot -->
+     <div id="foot">
+    <div id="ft">
+        <p class="contact"><a href="feedback.html">意见反馈</a></p>
+        <ul class="cf">
+            <li class="col">
+                <h3>用户帮助</h3>
+                <ul class="sub-list">
+                    <li><a href="http://www.meituan.com/learn">玩转美团</a></li>
+                    <li><a href="help/faq.html">常见问题</a></li>
+                </ul>
+            </li>
+            <li class="col">
+                <h3>获取更新</h3>
+                <ul class="sub-list">
+                    <li><a href="maillist/subscribe/chengdu.html">邮件订阅</a></li>
+                    <li><a href="http://t.sina.com.cn/meituan" target="_blank">美团新浪微博</a></li>
+                    <li><a href="http://www.douban.com/group/meituan/" target="_blank">美团豆瓣小组</a></li>
+                    <li><a href="feed/chengdu" target="_blank">RSS订阅</a></li>
+                </ul>
+            </li>
+            <li class="col">
+                <h3>商务合作</h3>
+                <ul class="sub-list">
+                    <li><a href="feedback/seller.html">提供团购信息</a></li>
+                </ul>
+            </li>
+            <li class="col">
+                <h3>公司信息</h3>
+                <ul class="sub-list">
+                    <li><a href="about.html">关于美团</a></li>
+                    <li><a href="about/press.html">媒体报道</a></li>
+                    <li><a href="about/job.html">加入我们</a></li>
+                    <li><a href="about/privacy.html">隐私声明</a></li>
+                </ul>
+            </li>
+            <li class="col end">
+                    <div class="logo-footer">
+                        <a href="www.meituan.html"><img src="images/logo.png" alt="tuanao.com" height="50"/></a>                    </div>
+            </li>
+        </ul>
+    </div>
+</div> <!--end foot-->
+      
+      
+  </div>
+</div>
+<!-- full skiplink functionality in webkit browsers -->
+<script src="js/yaml-focusfix.js" type="text/javascript"></script>
+<!-- change city -->
+<script type="text/javascript" src="javascripts/yui/2.6.0/build/utilities/utilities.js" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8" src="javascripts/core.js"></script>
+<script type="text/javascript" charset="utf-8" src="javascripts/app-deal.js"></script>
+<script type="text/javascript" src="javascripts/yui/2.6.0/build/container/container-min.js" charset="utf-8"></script>
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+  })();
+</script>
+<script type="text/javascript" charset="utf-8" src="javascripts/app-misc.js"></script><script>
+YAHOO.util.Event.onDOMReady(function(){
+    MT.app.Subscribe.init();});
+</script>
+</body>
+</html>
