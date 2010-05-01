@@ -8,10 +8,14 @@
             <table width="100%" border="0">
               <tr>
                 <td width="46%" height="90" align="right"><span class="price"><%=number_to_currency(@product.now_price)%></span></td>
-                <td width="54%"><form action="/welcome/add_to_cart/<%=@product.id%>" method="post">
+                <td width="54%">
+                <% if @product.sold_count < @product.total_count %>
+                  <form action="/welcome/add_to_cart/<%=@product.id%>" method="post">
                     <%= image_submit_tag "/images/bt_buy.gif" %>
                     <%= tag(:input, :type => "hidden", :name =>request_forgery_protection_token.to_s, :value =>form_authenticity_token) %> </form>
-
+                <% else %>
+                  <img src="/images/bt_exprice.gif"/>
+                <% end %>
                 </td>
               </tr>
             </table>
@@ -40,9 +44,25 @@
               </table>
             </div>
           </div></div>
+<style type="text/css">
+  .sall_status .slider {
+	background-image: url(images/bg_poll1.gif);
+	background-repeat: no-repeat;
+	height: 22px;
+	width:  <%= slider= @product.sold_count*100/@product.base_count %>%;
+	background-position: right;
+}
+.sall_status .scroll {
+	width: 100%;
+	background-image: url(images/scroll.png);
+	background-position: -<%=(100-slider)*2+10%>px;
+	background-repeat: no-repeat;
+}
+  </style>
         <div class="dbox">
           <div class="content"><div class="sall_status">
-              <h3><strong>5</strong>人已购买</h3>
+          <% if @product.sold_count < @product.base_count %>
+              <h3><strong><%=@product.sold_count%></strong>人已购买</h3>
               <div class="slider"></div>
               <div class="scroll"><img src="images/scroll3.png" width="100%"/></div>
               <div class="discount">
@@ -50,6 +70,13 @@
                 <div class="distop"><%=@product.base_count%></div>
               </div>
               <p><br/>团购的最低团购人数是: <%=@product.base_count%>人</p>
+          <% elsif @product.sold_count < @product.total_count %>
+             <h2>团购成功，<br/>可继续购买！</h2>
+             <p><br/><strong><%=@product.sold_count%></strong>人已购买，还有团品，抓紧哟！</p>
+         <% else %>
+             <h2>卖光了!</h2>
+             <p>本次团购共<strong><%=@product.sold_count%></strong>人购买。</p>
+         <% end %>
             </div>
           </div></div>
         <!-- end #sidebar1 --></div>
@@ -91,8 +118,8 @@
 
 <!--计时器-->
 <script language="JavaScript">
-  var overDate = 1272800004000;//截止时间
-  var Ntime=1272026099000;
+  var overDate = <%=(@product.ended_at.to_i+24*60*60)*1000%>;//截止时间
+  var Ntime= <%=Time.now.to_i*1000%>;
   var NowTime = new Date(Ntime);
   var EndTime= new Date(overDate);
   function GetRTime(){

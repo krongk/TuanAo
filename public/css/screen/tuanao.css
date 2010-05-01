@@ -133,25 +133,22 @@
 	text-decoration: none;
 }
 .sall_status{}
-.sall_status .slider {
-	background-image: url(../../images/bg_poll1.gif);
-	background-repeat: no-repeat;
-	height: 22px;
-	width: 25%;
-	background-position: right;
-}
-.sall_status .scroll {
-	width: 100%;
-	background-image: url(../../images/scroll.png);
-	background-position: -160px;
-	background-repeat: no-repeat;
-}
+
 .sall_status .discount {
 	position: relative;
 }
 .sall_status .discount .distop {
 	float: right;
 	margin-top:-14px;
+}
+.sall_status h2{
+	background-image: url(i/deal-buy-succ.gif);
+	background-repeat: no-repeat;
+	line-height:35px;
+	padding-left:40px;
+	font-size:1.4em;
+	font-family:"微软雅黑";
+	color:#F30;
 }
 
 .content h3{ text-align:center;color:#666; font-family:"微软雅黑"; font-size:14px;}
@@ -165,6 +162,9 @@
 	padding-right: 10px;
 	padding-bottom: 10px;
 	padding-left: 60px;
+}
+#mainContent .img{
+	overflow: hidden;
 }
 /*yesterday*/
 #city{
