@@ -1,5 +1,5 @@
 <div class="content2">
-<h1>添加新团品</h1>
+<h1>编辑新团品</h1>
 <a name="top"></a><%= link_to '返回', products_path %>
 <% form_for(@product) do |f| %>
   <%= f.error_messages %>
@@ -81,8 +81,9 @@
       &nbsp;&nbsp;&nbsp;<%= f.label :is_ok,"是否正常" %>:
     <%= f.check_box :is_ok %>
   </p>
-  <p>
-
+ <p>
+    <%= f.label :sold_count,'已卖出数量' %><br />
+    <%= f.text_field :sold_count,:size=>11 %>
   </p>
   <p>
     <%= f.submit '填好了，提交！    希望这单能带来好运！' %>

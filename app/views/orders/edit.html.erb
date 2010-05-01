@@ -1,41 +1,13 @@
-<h1>Editing order</h1>
 
-<% form_for(@order) do |f| %>
-  <%= f.error_messages %>
-
+<div style="border: 4px solid #66cccc;padding:20px;">
+  <h2>订单支付</h2>
+<link href="/stylesheets/order.css" rel="stylesheet" type="text/css" />
   <p>
-    <%= f.label :user %><br />
-    <%= f.text_field :user %>
-  </p>
-  <p>
-    <%= f.label :product %><br />
-    <%= f.text_field :product %>
+   用户：<%= @order.user.login %>
   </p>
   <p>
-    <%= f.label :quantity %><br />
-    <%= f.text_field :quantity %>
+   需要支付金额：<%= @order.order_price %>
   </p>
-  <p>
-    <%= f.label :discount %><br />
-    <%= f.text_field :discount %>
-  </p>
-  <p>
-    <%= f.label :order_price %><br />
-    <%= f.text_field :order_price %>
-  </p>
-  <p>
-    <%= f.label :is_pay %><br />
-    <%= f.check_box :is_pay %>
-  </p>
- <p>
-    <%= f.label :pay_type,"请选择支付方式" %>
-    <%= f.text_field :pay_type %>
-    <a href="http://pay3.chinabank.com.cn/Payto?v_mid=21701769"><img src="http://merchant3.chinabank.com.cn/images/button_1.gif"/>网银在线支付</a>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
-
-<%= link_to 'Show', @order %> |
-<%= link_to 'Back', orders_path %>
+ <hr/>
+<form action="https://pay3.chinabank.com.cn/Payto" method="post" ><INPUT type="hidden" name="v_mid" value="21701769" > <INPUT type="hidden" name="v_id" value="134566" > <INPUT type="hidden" name="v_url" value="http://www.tuanao.com/today" > <INPUT type="hidden" name="prdesc" value="被当今营养学界誉为“禾谷之王”的野生珍稀黑苦荞又称“黑珍珠苦荞”，外壳呈深黑色，营养价值极高" > <INPUT type="hidden" name="quantity" value="1" > <INPUT type="hidden" name="v_amount" value="55" > <INPUT type="hidden" name="productname" value="价值145元的黑苦荞茶1盒" > <INPUT type="image" src="http://merchant3.chinabank.com.cn/images/button_2.gif" > </form>
+</div>

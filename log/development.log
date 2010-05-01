@@ -51269,3 +51269,1641 @@ ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:m
   C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-05-01 17:38:04) [GET]
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (4.0ms)
+Rendered layouts/_sidebar (5.0ms)
+Rendered layouts/_header (6550.0ms)
+Rendered layouts/_footer (5.0ms)
+Rendered layouts/_foot_js (4.0ms)
+Completed in 6975ms (View: 6954, DB: 7) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:38:12) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-05-01 17:39:07) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (0.0ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 115ms (View: 93, DB: 7) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:39:08) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-05-01 17:39:21) [GET]
+Redirected to http://127.0.0.1:3000/session/new
+Filter chain halted as [:admin_required] rendered_or_redirected.
+Completed in 3ms (DB: 0) | 302 Found [http://127.0.0.1/products/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-01 17:39:21) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 38ms (View: 35, DB: 0) | 200 OK [http://127.0.0.1/session/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:39:22) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-01 17:39:28) [POST]
+  Parameters: {"commit"=>"登 录", "authenticity_token"=>"/Ss4pEH6VC6cH3pypn0HnvmRSHH0g4scA/ZTkJ9FsGk=", "login"=>"kenrome", "password"=>"0020010"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (login = 'kenrome') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 42ms (View: 12, DB: 0) | 200 OK [http://127.0.0.1/session]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:39:29) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-01 17:39:34) [POST]
+  Parameters: {"commit"=>"登 录", "authenticity_token"=>"/Ss4pEH6VC6cH3pypn0HnvmRSHH0g4scA/ZTkJ9FsGk=", "login"=>"admin", "password"=>"admin"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (login = 'admin') LIMIT 1[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 36ms (DB: 4) | 302 Found [http://127.0.0.1/session]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-05-01 17:39:34) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;36;1mProduct Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (0.0ms)
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Rendered layouts/_header (35.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 71ms (View: 50, DB: 9) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:39:35) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:39:40) [GET]
+
+ActionController::RoutingError (No route matches "/pr" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-05-01 17:39:44) [GET]
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;36;1mProduct Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 212ms (View: 157, DB: 7) | 200 OK [http://127.0.0.1/products/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2010-05-01 17:40:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;35;1mProduct Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering template within layouts/products
+Rendering products/edit
+Completed in 188ms (View: 137, DB: 9) | 200 OK [http://127.0.0.1/products/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-05-01 17:40:09) [GET]
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;36;1mProduct Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Completed in 66ms (View: 16, DB: 11) | 200 OK [http://127.0.0.1/products]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2010-05-01 17:40:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;35;1mProduct Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering template within layouts/products
+Rendering products/edit
+Completed in 101ms (View: 49, DB: 9) | 200 OK [http://127.0.0.1/products/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#edit (for 127.0.0.1 at 2010-05-01 17:41:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;35;1mProduct Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering template within layouts/products
+Rendering products/edit
+Completed in 118ms (View: 66, DB: 8) | 200 OK [http://127.0.0.1/products/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#update (for 127.0.0.1 at 2010-05-01 17:41:34) [PUT]
+  Parameters: {"commit"=>"填好了，提交！    希望这单能带来好运！", "authenticity_token"=>"/Ss4pEH6VC6cH3pypn0HnvmRSHH0g4scA/ZTkJ9FsGk=", "product"=>{"status"=>"1", "discount"=>"2", "details"=>"<p>&nbsp;<span class=\"Apple-style-span\" style=\"font-family: 宋体; font-size: 14px; line-height: 22px; \">【<strong>锅底</strong>】锅底精选鹿茸片熬制，清淡、滋补、养颜，男女老少皆宜。各色锅底，物美价廉、健康美味。本套餐可选尚品银汤或一品麻辣锅，鲜香浓醇，香辣优惠，不容错过。 </span></p>\r\n<p align=\"center\" style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \"><img alt=\"\" style=\"border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-style: initial; border-color: initial; \" src=\"http://www.24quan.com/pic/deal/55/006.jpg\" /></p>\r\n<p style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \">【<strong>肥牛</strong>】肥牛是从意大利进口，有６种之多，其中<strong>极品肥牛</strong>是福成肥牛中的精品，肉片呈大理石花纹状，肉质鲜嫩，入口即化，而肥瘦相间的<strong>肥牛一号角盘</strong>更适合大众消费，加上各式精美菜品，为福成肥牛锦上添花。</p>\r\n<p align=\"center\" style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \"><img alt=\"\" style=\"border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-style: initial; border-color: initial; \" src=\"http://www.24quan.com/pic/deal/55/005.jpg\" /></p>\r\n<p style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \">【<strong>羊肉</strong>】以其配方独特的涮肉调料，精选优质山羊、小绵羊等的上品羊肉，既可抵御风寒，又可滋阴补阳。低廉的价格，精细出品在京城享有赞誉。</p>\r\n<p align=\"center\" style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \"><img alt=\"\" style=\"border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-style: initial; border-color: initial; \" src=\"http://www.24quan.com/pic/deal/55/003.jpg\" /></p>\r\n<p style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \">【<strong>环境</strong>】福成嘉茂 店宽敞豪华，前台格调清晰典雅。店内的小物件妙趣横生，馨香四溢。异乡风情的装饰墙，高树低枝，叶脉流青，令人神往。</p>\r\n<p align=\"center\" style=\"margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 10px; font-size: 14px; line-height: 22px; font-family: 宋体; \"><img alt=\"\" style=\"border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-style: initial; border-color: initial; \" src=\"http://www.24quan.com/pic/deal/55/004.jpg\" /></p>\r\n<p>&nbsp;</p>", "title"=>"仅售32元！价值80元的朝阳门博纳悠唐影城全时段1:1兑换券（可直接兑换3D电影）", "contact"=>"<p>&nbsp;<span class=\"Apple-style-span\" style=\"font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 22px; \"><strong>福成福牛</strong><br />\r\n地址：西城区西直门外大街1号嘉茂购物中心4-5楼（<a style=\"cursor: pointer; color: rgb(0, 0, 0); text-decoration: none; \" href=\"http://ditu.google.cn/maps?f=q&amp;source=s_q&amp;hl=zh-CN&amp;geocode=&amp;q=%E8%A5%BF%E7%9B%B4%E9%97%A8%E5%98%89%E8%8C%82%E8%B4%AD%E7%89%A9%E4%B8%AD%E5%BF%83&amp;sll=39.940928,116.352736&amp;sspn=0.003488,0.010525&amp;brcurrent=3,0x35f053b3692cde39:0x53e8f120c1db0e54,0,0x35f0525303f10153:0x6b772a2a053ba4a0%3B5,0,0&amp;ie=UTF8&amp;hq=%E5%98%89%E8%8C%82%E8%B4%AD%E7%89%A9%E4%B8%AD%E5%BF%83&amp;hnear=%E5%8C%97%E4%BA%AC%E5%B8%82%E8%A5%BF%E5%9F%8E%E5%8C%BA%E8%A5%BF%E7%9B%B4%E9%97%A8&amp;ll=39.942844,116.362467&amp;spn=0.029546,0.0842&amp;z=14\"><font color=\"#ff6600\">查看地图</font></a>）<br />\r\n电话：010-58302969&nbsp;<br />\r\n营业时间：10:00-22:00</span></p>", "now_price"=>"23", "started_at(1i)"=>"2010", "ended_at(1i)"=>"2010", "started_at(2i)"=>"5", "base_count"=>"30", "summary"=>"<p>&nbsp;<span class=\"Apple-style-span\" style=\"font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: rgb(102, 102, 102); line-height: 21px; \">不到一份牛肉的价格，就可以品味至尊套餐。吃正宗肥牛，从福成开始。</span></p>", "ended_at(2i)"=>"5", "started_at(3i)"=>"1", "save_price"=>"33", "ended_at(3i)"=>"2", "started_at(4i)"=>"16", "sold_count"=>"30", "is_publish"=>"1", "picture"=>"http://www.24quan.com/pic/deal/55/001.jpg", "ended_at(4i)"=>"16", "started_at(5i)"=>"38", "comment"=>"<p>&nbsp;<span class=\"Apple-style-span\" style=\"font-family: 宋体; font-size: 14px; line-height: 22px; \">&ldquo;很喜欢的一家火锅店！记得去年来过几回，最后出差了，今天回来就去了。我敢说服务比去年好多了！而且小姑娘们都很可爱，很热情！看来培训的不错！我还是点了我最喜欢的18元的啤酒肥牛！！好像比以前量大了半斤以上吧！&rdquo; </span></p>\r\n<p align=\"right\" style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \">&mdash;&mdash;<a style=\"cursor: pointer; color: rgb(0, 0, 0); text-decoration: none; \" href=\"http://www.dianping.com/shop/2660296#ur\"><font color=\"#ff6600\">东冉神起（大众点评网）</font></a></p>\r\n<p style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \">&ldquo;每人一个精致的小锅，锅底选择较多，鲍鱼汤还有菌汤都不错，很鲜。特别推荐蟹黄虾丸，很好吃，吃起来很有嚼劲，没有添加面粉什么的，感觉一下子吞进去了好几只虾，蟹黄裹在虾球外面，一粒一粒的口感也很不错。&rdquo;</p>\r\n<p align=\"right\" style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \">&mdash;&mdash;<a style=\"cursor: pointer; color: rgb(0, 0, 0); text-decoration: none; \" href=\"http://www.dianping.com/shop/2660296#ur\"><font color=\"#ff6600\">youlanda郑（大众点评网）</font></a></p>\r\n<p style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \">&ldquo;福成肥牛是我经常去吃的火锅，这里的味道不错，我一直都很喜欢，很适合朋友一起去吃。很喜欢那里的刺身羊肉。环境也好，价格有点高，不过也能接受了。&rdquo;</p>\r\n<p align=\"right\" style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \">&mdash;&mdash;<a style=\"cursor: pointer; color: rgb(0, 0, 0); text-decoration: none; \" href=\"http://beijing.koubei.com/store/detail--storeId-f3d8184db35148f78fe67c1659f9eda4\"><font color=\"#ff6600\">938爱我（口碑网）</font></a></p>\r\n<p>&nbsp;</p>", "original_price"=>"234", "ended_at(5i)"=>"38", "total_count"=>"50", "is_ok"=>"1"}, "id"=>"1"}
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mProduct Update (1.0ms)[0m   [0;1mUPDATE `products` SET `updated_at` = '2010-05-01 09:41:34', `sold_count` = 30 WHERE `id` = 1[0m
+  [4;35;1mSQL (52.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/products/1
+Completed in 131ms (DB: 62) | 302 Found [http://127.0.0.1/products/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProductsController#show (for 127.0.0.1 at 2010-05-01 17:41:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;36;1mProduct Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering template within layouts/products
+Rendering products/show
+Completed in 77ms (View: 23, DB: 8) | 200 OK [http://127.0.0.1/products/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-05-01 17:41:43) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (1.0ms)
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Rendered layouts/_header (36.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 81ms (View: 60, DB: 8) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:41:43) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#add_to_cart (for 127.0.0.1 at 2010-05-01 17:41:48) [POST]
+  Parameters: {"x"=>"63", "y"=>"30", "authenticity_token"=>"/Ss4pEH6VC6cH3pypn0HnvmRSHH0g4scA/ZTkJ9FsGk=", "id"=>"1"}
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering welcome/add_to_cart
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 127ms (View: 49, DB: 10) | 200 OK [http://127.0.0.1/welcome/add_to_cart/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:41:48) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#add_to_order (for 127.0.0.1 at 2010-05-01 17:41:54) [POST]
+  Parameters: {"order_price"=>"23", "product_id"=>"1", "quantity"=>"1", "authenticity_token"=>"/Ss4pEH6VC6cH3pypn0HnvmRSHH0g4scA/ZTkJ9FsGk=", "提交"=>"确定"}
+  [4;36;1mOrder Columns (90.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mOrder Create (19.0ms)[0m   [0;1mINSERT INTO `orders` (`discount`, `updated_at`, `order_price`, `product_id`, `quantity`, `pay_type`, `user_id`, `is_pay`, `created_at`) VALUES(NULL, '2010-05-01 09:41:54', 23.0, NULL, NULL, NULL, 5, NULL, '2010-05-01 09:41:54')[0m
+  [4;35;1mSQL (36.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/orders/3/edit
+Completed in 314ms (DB: 159) | 302 Found [http://127.0.0.1/add_to_order]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-05-01 17:41:54) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mOrder Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM `orders` WHERE (`orders`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering orders/edit
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Rendered layouts/_header (8.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 150ms (View: 123, DB: 9) | 200 OK [http://127.0.0.1/orders/3/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:41:55) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:41:57) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-05-01 17:44:06) [GET]
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 62ms (DB: 6) | 302 Found [http://127.0.0.1/logout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-05-01 17:44:06) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (0.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 41ms (View: 22, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:44:07) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-01 17:44:08) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 21ms (View: 18, DB: 0) | 200 OK [http://127.0.0.1/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:44:09) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-01 17:44:11) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 18ms (View: 15, DB: 1) | 200 OK [http://127.0.0.1/signup]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:44:11) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-05-01 17:44:12) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;36;1mProduct Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 40ms (View: 22, DB: 4) | 200 OK [http://127.0.0.1/today]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:44:12) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#add_to_cart (for 127.0.0.1 at 2010-05-01 17:44:13) [POST]
+  Parameters: {"x"=>"49", "y"=>"31", "authenticity_token"=>"sI/5lXjQcELQSGA3jMV3vyyuVqohK5WB7ZEYhu/dL+s=", "id"=>"1"}
+Redirected to http://127.0.0.1:3000/login
+Completed in 5ms (DB: 1) | 302 Found [http://127.0.0.1/welcome/add_to_cart/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-01 17:44:13) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 20ms (View: 16, DB: 2) | 200 OK [http://127.0.0.1/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:44:14) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-01 17:44:22) [POST]
+  Parameters: {"commit"=>"登 录", "authenticity_token"=>"sI/5lXjQcELQSGA3jMV3vyyuVqohK5WB7ZEYhu/dL+s=", "login"=>"admin", "password"=>"kenrome"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (login = 'admin') LIMIT 1[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 67ms (View: 21, DB: 4) | 200 OK [http://127.0.0.1/session]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:44:22) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-01 17:44:27) [POST]
+  Parameters: {"commit"=>"登 录", "authenticity_token"=>"sI/5lXjQcELQSGA3jMV3vyyuVqohK5WB7ZEYhu/dL+s=", "login"=>"admin", "password"=>"admin"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (login = 'admin') LIMIT 1[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/sessions_controller.rb:15:in `redirect_back_or_default'
+  app/controllers/sessions_controller.rb:15:in `create'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (85.0ms)
+Rendered rescues/_request_and_response (5.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:44:39) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-05-01 17:44:44) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (0.0ms)
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Rendered layouts/_header (123.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 178ms (View: 152, DB: 8) | 200 OK [http://127.0.0.1/today]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:44:44) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-05-01 17:44:45) [GET]
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 45ms (DB: 8) | 302 Found [http://127.0.0.1/logout]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-05-01 17:44:45) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;36;1mProduct Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (1.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 42ms (View: 24, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:44:46) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#add_to_cart (for 127.0.0.1 at 2010-05-01 17:44:47) [POST]
+  Parameters: {"x"=>"66", "y"=>"30", "authenticity_token"=>"R6c5mq3tHtMsEPt4y6+sT7lAl139V/Tbm7ShcwJob24=", "id"=>"1"}
+Redirected to http://127.0.0.1:3000/login
+Completed in 6ms (DB: 2) | 302 Found [http://127.0.0.1/welcome/add_to_cart/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-01 17:44:47) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 20ms (View: 17, DB: 1) | 200 OK [http://127.0.0.1/login]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:44:48) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-01 17:44:52) [POST]
+  Parameters: {"commit"=>"登 录", "authenticity_token"=>"R6c5mq3tHtMsEPt4y6+sT7lAl139V/Tbm7ShcwJob24=", "login"=>"admin", "password"=>"admin"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (login = 'admin') LIMIT 1[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 46ms (DB: 3) | 302 Found [http://127.0.0.1/session]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-05-01 17:44:52) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (1.0ms)
+Rendered layouts/_sidebar (0.0ms)
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Rendered layouts/_header (43.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 173ms (View: 74, DB: 10) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:44:53) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2010-05-01 17:45:19) [GET]
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 133ms (DB: 4) | 302 Found [http://127.0.0.1/logout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-05-01 17:45:20) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (1.0ms)
+Rendered layouts/_sidebar (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 59ms (View: 35, DB: 7) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:45:20) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#add_to_cart (for 127.0.0.1 at 2010-05-01 17:45:22) [POST]
+  Parameters: {"x"=>"74", "y"=>"31", "authenticity_token"=>"lpE/Fw0bwmBxH8wXQn9crbewxm6g4wg/dFNMGDZF5qw=", "id"=>"1"}
+Redirected to http://127.0.0.1:3000/login
+Completed in 8ms (DB: 1) | 302 Found [http://127.0.0.1/welcome/add_to_cart/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-05-01 17:45:23) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 31ms (View: 26, DB: 1) | 200 OK [http://127.0.0.1/login]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:45:23) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-05-01 17:45:28) [POST]
+  Parameters: {"commit"=>"登 录", "authenticity_token"=>"lpE/Fw0bwmBxH8wXQn9crbewxm6g4wg/dFNMGDZF5qw=", "login"=>"admin", "password"=>"admin"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (login = 'admin') LIMIT 1[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Redirected to http://127.0.0.1:3000/welcome/add_to_cart/1
+Completed in 40ms (DB: 3) | 302 Found [http://127.0.0.1/session]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#add_to_cart (for 127.0.0.1 at 2010-05-01 17:45:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering welcome/add_to_cart
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 100ms (View: 23, DB: 8) | 200 OK [http://127.0.0.1/welcome/add_to_cart/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:45:30) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#add_to_order (for 127.0.0.1 at 2010-05-01 17:47:38) [POST]
+  Parameters: {"order_price"=>"23", "product_id"=>"1", "quantity"=>"1", "authenticity_token"=>"lpE/Fw0bwmBxH8wXQn9crbewxm6g4wg/dFNMGDZF5qw=", "提交"=>"确定"}
+  [4;35;1mOrder Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mOrder Create (1.0ms)[0m   [0mINSERT INTO `orders` (`discount`, `updated_at`, `order_price`, `product_id`, `quantity`, `pay_type`, `user_id`, `is_pay`, `created_at`) VALUES(NULL, '2010-05-01 09:47:38', 23.0, NULL, NULL, NULL, 5, NULL, '2010-05-01 09:47:38')[0m
+  [4;36;1mSQL (22.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/orders/4/edit
+Completed in 99ms (DB: 30) | 302 Found [http://127.0.0.1/add_to_order]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-05-01 17:47:38) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mOrder Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mOrder Load (1.0ms)[0m   [0;1mSELECT * FROM `orders` WHERE (`orders`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering orders/edit
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Rendered layouts/_header (6.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 108ms (View: 84, DB: 10) | 200 OK [http://127.0.0.1/orders/4/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:47:39) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-05-01 17:50:27) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mOrder Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM `orders` WHERE (`orders`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering orders/edit
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 104ms (View: 80, DB: 7) | 200 OK [http://127.0.0.1/orders/4/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:50:28) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-05-01 17:51:40) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mOrder Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `orders` WHERE (`orders`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering orders/edit
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 106ms (View: 82, DB: 9) | 200 OK [http://127.0.0.1/orders/4/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:51:41) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-05-01 17:52:26) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mOrder Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM `orders` WHERE (`orders`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering orders/edit
+  [4;36;1mUser Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 97ms (View: 71, DB: 11) | 200 OK [http://127.0.0.1/orders/4/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:52:27) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-05-01 17:53:15) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mOrder Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `orders` WHERE (`orders`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering orders/edit
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 98ms (View: 77, DB: 6) | 200 OK [http://127.0.0.1/orders/4/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:53:16) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-05-01 17:53:33) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mOrder Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mOrder Load (1.0ms)[0m   [0mSELECT * FROM `orders` WHERE (`orders`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering orders/edit
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 117ms (View: 91, DB: 8) | 200 OK [http://127.0.0.1/orders/4/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:53:34) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-05-01 17:55:13) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mOrder Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mOrder Load (1.0ms)[0m   [0;1mSELECT * FROM `orders` WHERE (`orders`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering orders/edit
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mProduct Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+
+ActionView::TemplateError (undefined method `hidden' for #<ActionView::Helpers::FormBuilder:0x789f164>) on line #22 of app/views/orders/edit.html.erb:
+19:  </p>
+20: 
+21:   <p>
+22:     <%= f.hidden '支付成功' %>
+23:   </p>
+24: <% end %>
+25: </div>
+
+    app/views/orders/edit.html.erb:22
+    app/views/orders/edit.html.erb:4
+    C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (144.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-05-01 17:55:20) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mOrder Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mOrder Load (8.0ms)[0m   [0mSELECT * FROM `orders` WHERE (`orders`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering orders/edit
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+
+ActionView::TemplateError (undefined method `支付成功' for #<Order:0x79314d8>) on line #22 of app/views/orders/edit.html.erb:
+19:  </p>
+20: 
+21:   <p>
+22:     <%= f.hidden_field '支付成功' %>
+23:   </p>
+24: <% end %>
+25: </div>
+
+    app/views/orders/edit.html.erb:22
+    app/views/orders/edit.html.erb:4
+    C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (86.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#add_to_cart (for 127.0.0.1 at 2010-05-01 17:58:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;36;1mProduct Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering welcome/add_to_cart
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 76ms (View: 15, DB: 11) | 200 OK [http://127.0.0.1/welcome/add_to_cart/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:58:50) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#add_to_order (for 127.0.0.1 at 2010-05-01 17:58:52) [POST]
+  Parameters: {"order_price"=>"23", "product_id"=>"1", "quantity"=>"1", "authenticity_token"=>"lpE/Fw0bwmBxH8wXQn9crbewxm6g4wg/dFNMGDZF5qw=", "提交"=>"确定"}
+  [4;36;1mOrder Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mOrder Create (1.0ms)[0m   [0;1mINSERT INTO `orders` (`discount`, `updated_at`, `order_price`, `product_id`, `quantity`, `pay_type`, `user_id`, `is_pay`, `created_at`) VALUES(NULL, '2010-05-01 09:58:52', 23.0, NULL, NULL, NULL, 5, NULL, '2010-05-01 09:58:52')[0m
+  [4;35;1mSQL (87.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/orders/5/edit
+Completed in 191ms (DB: 97) | 302 Found [http://127.0.0.1/add_to_order]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-05-01 17:58:52) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mOrder Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM `orders` WHERE (`orders`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering orders/edit
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Rendered layouts/_header (29.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 119ms (View: 92, DB: 7) | 200 OK [http://127.0.0.1/orders/5/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 17:58:53) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#today (for 127.0.0.1 at 2010-05-01 17:59:59) [GET]
+  [4;35;1mProduct Load (0.0ms)[0m   [0mSELECT * FROM `products` WHERE (status=1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/today
+  [4;36;1mProduct Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered layouts/_share (0.0ms)
+Rendered layouts/_sidebar (0.0ms)
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Rendered layouts/_header (34.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 83ms (View: 63, DB: 7) | 200 OK [http://127.0.0.1/today]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 18:00:00) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#add_to_cart (for 127.0.0.1 at 2010-05-01 18:00:01) [POST]
+  Parameters: {"x"=>"47", "y"=>"26", "authenticity_token"=>"lpE/Fw0bwmBxH8wXQn9crbewxm6g4wg/dFNMGDZF5qw=", "id"=>"1"}
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering welcome/add_to_cart
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (0.0ms)
+Completed in 104ms (View: 32, DB: 10) | 200 OK [http://127.0.0.1/welcome/add_to_cart/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 18:00:01) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#add_to_cart (for 127.0.0.1 at 2010-05-01 18:00:14) [POST]
+  Parameters: {"x"=>"92", "y"=>"15", "authenticity_token"=>"lpE/Fw0bwmBxH8wXQn9crbewxm6g4wg/dFNMGDZF5qw=", "id"=>"1"}
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;35;1mProduct Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (0.0ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering welcome/add_to_cart
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 91ms (View: 24, DB: 9) | 200 OK [http://127.0.0.1/welcome/add_to_cart/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 18:00:14) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#add_to_order (for 127.0.0.1 at 2010-05-01 18:00:15) [POST]
+  Parameters: {"order_price"=>"23", "product_id"=>"1", "quantity"=>"1", "authenticity_token"=>"lpE/Fw0bwmBxH8wXQn9crbewxm6g4wg/dFNMGDZF5qw=", "提交"=>"确定"}
+  [4;35;1mOrder Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mOrder Create (0.0ms)[0m   [0mINSERT INTO `orders` (`discount`, `updated_at`, `order_price`, `product_id`, `quantity`, `pay_type`, `user_id`, `is_pay`, `created_at`) VALUES(NULL, '2010-05-01 10:00:15', 23.0, NULL, NULL, NULL, 5, NULL, '2010-05-01 10:00:15')[0m
+  [4;36;1mSQL (59.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/orders/6/edit
+Completed in 137ms (DB: 66) | 302 Found [http://127.0.0.1/add_to_order]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-05-01 18:00:15) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mOrder Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `orders` WHERE (`orders`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering orders/edit
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Rendered layouts/_header (25.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 170ms (View: 146, DB: 7) | 200 OK [http://127.0.0.1/orders/6/edit]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 18:00:16) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-05-01 18:01:49) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mOrder Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mOrder Load (1.0ms)[0m   [0mSELECT * FROM `orders` WHERE (`orders`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering orders/edit
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;36;1mUser Load (10.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Rendered layouts/_header (35.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 172ms (View: 141, DB: 19) | 200 OK [http://127.0.0.1/orders/6/edit]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 18:01:50) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-05-01 18:02:13) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mOrder Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mOrder Load (0.0ms)[0m   [0;1mSELECT * FROM `orders` WHERE (`orders`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering orders/edit
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Rendered layouts/_header (109.0ms)
+Rendered layouts/_footer (1.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 212ms (View: 177, DB: 10) | 200 OK [http://127.0.0.1/orders/6/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 18:02:14) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OrdersController#edit (for 127.0.0.1 at 2010-05-01 18:02:42) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mOrder Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mOrder Load (0.0ms)[0m   [0mSELECT * FROM `orders` WHERE (`orders`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering orders/edit
+  [4;36;1mUser Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 5) LIMIT 1[0m
+Rendered layouts/_header (32.0ms)
+Rendered layouts/_footer (0.0ms)
+Rendered layouts/_foot_js (1.0ms)
+Completed in 126ms (View: 94, DB: 13) | 200 OK [http://127.0.0.1/orders/6/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-01 18:02:43) [GET]
+
+ActionController::RoutingError (No route matches "/js/yaml-focusfix.js" with {:method=>:get}):
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby18/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby18/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
