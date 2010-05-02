@@ -315,3 +315,19 @@
 	padding: 3px;
 	margin: 0px;
 }
+.side_whant {
+	background-image: url(../../images/bg_whant.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 230px;
+	width: 230px;
+	padding-top: 74px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.side_whant  form {
+	padding-left: 10px;
+	width: 210px;
+	overflow: hidden;
+}

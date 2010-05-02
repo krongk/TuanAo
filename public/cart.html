@@ -148,7 +148,25 @@
 <div id="col3" role="main">
   <div id="col3_content" class="clearfix">
    <!--side bar start-->
-      <%=render :partial=>'layouts/sidebar'%>
+     <div class="side_whant"> 
+  <form action="/feedbacks" class="new_feedback" id="new_feedback" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="XlW05Q7GzrYSQ/24F7RI6LW6OTE0+3lX71uYC35N5aQ=" /></div> 
+  <p> 
+    <label for="feedback_name">您的称呼</label> 
+    <input id="feedback_name" name="feedback[name]" size="30" type="text" /> 
+  </p> 
+  <p> 
+    <label for="feedback_contact">联系方式</label> 
+    <input id="feedback_contact" name="feedback[contact]" size="30" type="text" /><br/> 
+  </p> 
+  <p> 
+    <label for="feedback_message">反馈内容</label> 
+    <textarea cols="25" id="feedback_message" name="feedback[message]" rows="4"></textarea> 
+  </p> 
+  <p> 
+    <input id="feedback_submit" name="commit" type="submit" value="提  交" /> 
+  </p> 
+</form> 
+</div> 
       <!--side bar end-->
   </div>
   <div id="ie_clearing">&nbsp;</div>
