@@ -162,9 +162,21 @@
 
   .info { background:#f8f8f8; color:#666; padding:0px; margin-bottom:0.5em; font-size:91.7%; }
 
-  .note { background:#efe; color:#040; border:2px #484 solid; padding:10px; margin-bottom:1em; }
+  .note {
+	background:#efe;
+	color:#099;
+	border:2px solid #099;
+	padding:10px;
+	margin-bottom:1em;
+}
   .important { background:#ffe; color:#440; border:2px #884 solid; padding:10px; margin-bottom:1em; }
-  .warning { background:#fee; color:#400; border:2px #844 solid; padding:10px; margin-bottom:1em; }
+  .warning {
+	background:#fee;
+	color:#900;
+	border:2px solid #900;
+	padding:10px;
+	margin-bottom:1em;
+}
 
   .float_left { float:left; display:inline; margin-right:1em; margin-bottom:0.15em; }
   .float_right { float:right; display:inline; margin-left:1em; margin-bottom:0.15em; }

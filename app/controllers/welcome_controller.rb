@@ -40,14 +40,23 @@ class WelcomeController < ApplicationController
   def add_to_order
     @order = Order.new
     @order.user = current_user
-    #@order.product = params[:product_id]
+    @order.product = Product.find(params[:product_id])
     @order.order_price = params[:order_price]
     if @order.save
-      flash[:notice]="下订单成功!请选择支付"
-      redirect_to edit_order_path(@order)
+        update_product(@order)
+        flash[:notice]="下订单成功!支付以后,程序自动为你生成消费券."
+        redirect_to edit_order_path(@order)
     else
       flash[:notice]="订单未成功,请检查"
       redirect_to "/add_to_cart"
+    end
+  end
+  #生成订单后,更新团品数量
+  def update_product(order)
+    p = order.product
+    p.sold_count+=1
+    if p.save
+      flash[:notice]="下订单成功!支付以后,程序自动为你生成消费券."
     end
   end
   #------------------------------------------

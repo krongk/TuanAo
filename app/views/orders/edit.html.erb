@@ -1,13 +1,13 @@
-
-<div style="border: 4px solid #66cccc;padding:20px;">
-  <h2>订单支付</h2>
-<link href="/stylesheets/order.css" rel="stylesheet" type="text/css" />
+<div style="border: 4px solid #66cccc;padding:20px;" class="highlight">
+  <h3>订单支付确认</h3><hr/>
+  <link href="/stylesheets/order.css" rel="stylesheet" type="text/css" />
   <p>
-   用户：<%= @order.user.login %>
+    用户：<%= @order.user.login %>
   </p>
   <p>
-   需要支付金额：<%= @order.order_price %>
+    需要支付金额：￥<%= @order.order_price %>
   </p>
- <hr/>
-<form action="https://pay3.chinabank.com.cn/Payto" method="post" ><INPUT type="hidden" name="v_mid" value="21701769" > <INPUT type="hidden" name="v_id" value="134566" > <INPUT type="hidden" name="v_url" value="http://www.tuanao.com/today" > <INPUT type="hidden" name="prdesc" value="被当今营养学界誉为“禾谷之王”的野生珍稀黑苦荞又称“黑珍珠苦荞”，外壳呈深黑色，营养价值极高" > <INPUT type="hidden" name="quantity" value="1" > <INPUT type="hidden" name="v_amount" value="55" > <INPUT type="hidden" name="productname" value="价值145元的黑苦荞茶1盒" > <INPUT type="image" src="http://merchant3.chinabank.com.cn/images/button_2.gif" > </form>
+  <br/><br/>
+  <h3>请选择支付方式</h3><hr/>
+  <form action="https://pay3.chinabank.com.cn/Payto" method="post" accept-charset="unicode"><INPUT type="hidden" name="v_mid" value="21701769" > <INPUT type="hidden" name="v_id" value="134566" > <INPUT type="hidden" name="v_url" value="http://www.tuanao.com/today" > <INPUT type="hidden" name="quantity" value="1" > <INPUT type="hidden" name="v_amount" value="55" >网银在线：<INPUT type="image" src="http://merchant3.chinabank.com.cn/images/button_2.gif" ></form>
 </div>

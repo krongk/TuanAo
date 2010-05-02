@@ -1,4 +1,5 @@
 class OrdersController < ApplicationController
+  before_filter :admin_required, :only=>[:index,:show,:destroy]
   # GET /orders
   # GET /orders.xml
   def index
