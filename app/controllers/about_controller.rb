@@ -15,6 +15,11 @@ class AboutController < ApplicationController
   end
 
   def maillist
+    if session[:mail]
+
+    else
+      redirect_to "/emails/new"
+    end
   end
 
   def press

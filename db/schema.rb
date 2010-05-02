@@ -9,7 +9,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100426060937) do
+ActiveRecord::Schema.define(:version => 20100502065635) do
+
+  create_table "emails", :force => true do |t|
+    t.integer  "city"
+    t.string   "mail"
+    t.boolean  "is_ok"
+    t.string   "note"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "feedbacks", :force => true do |t|
     t.string   "name"
