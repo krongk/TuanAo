@@ -11,3 +11,69 @@
   <h3>请选择支付方式</h3><hr/>
   <form action="https://pay3.chinabank.com.cn/Payto" method="post" accept-charset="unicode"><INPUT type="hidden" name="v_mid" value="21701769" > <INPUT type="hidden" name="v_id" value="134566" > <INPUT type="hidden" name="v_url" value="http://www.tuanao.com/today" > <INPUT type="hidden" name="quantity" value="1" > <INPUT type="hidden" name="v_amount" value="55" >网银在线：<INPUT type="image" src="http://merchant3.chinabank.com.cn/images/button_2.gif" ></form>
 </div>
+
+<h1>提交表单</h1>
+<p>1. CREATE_DIRECT_PAY_BY_USER 即时到账</p>
+<% payment_service_for 'payment code', ActiveMerchant::Billing::Integrations::Alipay::ACCOUNT,
+  :service => :alipay,
+  :html => { :id => 'payment-form', :method => :get } do |service| -%>
+  <% service.total_fee 0.02 -%>
+  <% service.seller :email => ActiveMerchant::Billing::Integrations::Alipay::EMAIL -%>
+  <% service.notify_url url_for(:only_path => false, :action => 'notify') -%>
+  <% service.return_url url_for(:only_path => false, :action => 'done') -%>
+  <% service.show_url url_for(:only_path => false, :action => 'show') -%>
+  <% service.body 'payment body' -%>
+  <% service.charset "utf-8" -%>
+  <% service.service ActiveMerchant::Billing::Integrations::Alipay::Helper::CREATE_DIRECT_PAY_BY_USER -%>
+  <% service.payment_type 1 -%>
+  <% service.subject 'payment subject' -%>
+  <% service.sign -%>
+<% end -%>
+<%= button_to_function "Submit", "document.getElementById('payment-form').submit();" %>
+<%#==================================================================%>
+<p>2. CREATE_PARTNER_TRADE_BY_BUYER 担保交易</p>
+<% payment_service_for 'payment code', ActiveMerchant::Billing::Integrations::Alipay::ACCOUNT,
+                            :service => :alipay,
+                            :html => { :id => 'payment-form', :method => :get } do |service| %>
+  <% service.discount -0.01 %>
+  <% service.price 0.01 %>
+  <% service.quantity 2 %>
+  <% service.seller :email => ActiveMerchant::Billing::Integrations::Alipay::EMAIL %>
+  <%# service.buyer :id => 'buyer_id' %>
+  <% service.notify_url url_for(:only_path => false, :action => 'notify') %>
+  <% service.return_url url_for(:only_path => false, :action => 'done') %>
+  <% service.show_url url_for(:only_path => false, :action => 'show') %>
+  <% service.body 'payment body' %>
+  <% service.charset "utf-8" %>
+  <% service.service ActiveMerchant::Billing::Integrations::Alipay::Helper::CREATE_PARTNER_TRADE_BY_BUYER %>
+  <% service.payment_type 1 %>
+  <% service.subject 'payment subject' %>
+  <% service.agent ActiveMerchant::Billing::Integrations::Alipay::ACCOUNT %>
+  <% service.logistics :type => 'EXPRESS', :fee => 0.10, :payment => 'BUYER_PAY' %>
+  <% service.receive :name => '黄志敏', :address => '上海市静安中华大厦1808室', :zip => 'xxxxxx', :phone => 'xxxxxxxxxxx', :mobile => 'xxxxxxxxxxx' %>
+  <% service.sign %>
+<% end %>
+<%= button_to_function "Submit", "document.getElementById('payment-form').submit();" %>
+
+<%#==================================================================%>
+<p>3.TRADE_CREATE_BY_BUYER 标准双接口</p>
+<% payment_service_for 'payment code', ActiveMerchant::Billing::Integrations::Alipay::ACCOUNT,
+                            :service => :alipay,
+                            :html => { :id => 'payment-form', :method => :get } do |service| %>
+  <% service.discount -0.01 %>
+  <% service.price 0.01 %>
+  <% service.quantity 2 %>
+  <% service.seller :email => ActiveMerchant::Billing::Integrations::Alipay::EMAIL %>
+  <% service.notify_url url_for(:only_path => false, :action => 'notify') %>
+  <% service.return_url url_for(:only_path => false, :action => 'done') %>
+  <% service.show_url url_for(:only_path => false, :action => 'show') %>
+  <% service.body 'payment body' %>
+  <% service.charset "utf-8" %>
+  <% service.service ActiveMerchant::Billing::Integrations::Alipay::Helper::TRADE_CREATE_BY_BUYER %>
+  <% service.payment_type 1 %>
+  <% service.subject 'payment subject' %>
+  <% service.logistics :type => 'EXPRESS', :fee => 0.10, :payment => 'BUYER_PAY' %>
+  <% service.receive :name => '黄志敏', :address => '上海市静安中华大厦1808室', :zip => 'xxxxxx', :phone => 'xxxxxxxxxxx', :mobile => 'xxxxxxxxxxx' %>
+  <% service.sign %>
+<% end %>
+<%= button_to_function "Submit", "document.getElementById('payment-form').submit();" %>
