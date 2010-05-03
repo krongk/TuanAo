@@ -1,23 +1,8 @@
-<div style="border: 4px solid #66cccc;padding:20px;" class="highlight">
-  <h3>订单支付确认</h3><hr/>
-  <link href="/stylesheets/order.css" rel="stylesheet" type="text/css" />
-  <p>
-    用户：<%= @order.user.login %>
-  </p>
-  <p>
-    需要支付金额：￥<%= @order.order_price %>
-  </p>
-  <br/><br/>
-  <h3>请选择支付方式</h3><hr/>
-  <form action="https://pay3.chinabank.com.cn/Payto" method="post" accept-charset="unicode"><INPUT type="hidden" name="v_mid" value="21701769" > <INPUT type="hidden" name="v_id" value="134566" > <INPUT type="hidden" name="v_url" value="http://www.tuanao.com/today" > <INPUT type="hidden" name="quantity" value="1" > <INPUT type="hidden" name="v_amount" value="55" >网银在线：<INPUT type="image" src="http://merchant3.chinabank.com.cn/images/button_2.gif" ></form>
-</div>
+<h1>Chinabank#index</h1>
+<HTML>
 
-<hr/>
-<h2><a target="_blank" href="https://www.alipay.com/cooperate/gateway.do?partner=2088102635663013&body=payment+body&out_trade_no=payment+code&service=create_direct_pay_by_user&return_url=http%3A%2F%2Fwww.tuanao.com%2Forders%2Fdone&total_fee=0.02&subject=payment+subject&_input_charset=utf-8&show_url=http%3A%2F%2Fwww.tuanao.com%2Forders%2F10&sign=947caa6fa86442dc35ee5186f464efc0&notify_url=http%3A%2F%2Fwww.tuanao.com%2Forders%2Fnotify&payment_type=1&sign_type=MD5&seller_email=kenrome@163.com">支付宝支付接口</a>
-</h2>
-
- <TABLE cellSpacing=0 cellPadding=0 width=760 align=center bgColor=#666666 border=0>
-    <FORM name=formbill action="/chinabank/seed" method=post>
+  <TABLE cellSpacing=0 cellPadding=0 width=760 align=center bgColor=#666666 border=0>
+    <FORM name=formbill action="/chinabanks/new" method=post>
       <%= tag(:input, :type => "hidden", :name =>request_forgery_protection_token.to_s, :value =>form_authenticity_token) %>
       <TBODY>
         <TR>
@@ -58,3 +43,7 @@
         </TR>
     </FORM></TBODY>
 </TABLE>
+  <hr/>
+  <form action="https://pay3.chinabank.com.cn/Payto" method="post" ><INPUT type="hidden" name="v_mid" value="21701769" > <INPUT type="hidden" name="v_id" value="134566" > <INPUT type="hidden" name="v_url" value="http://www.tuanao.com/today" > <INPUT type="hidden" name="prdesc" value="test" > <INPUT type="hidden" name="quantity" value="1" > <INPUT type="hidden" name="v_amount" value="32" > <INPUT type="hidden" name="productname" value="product1" > <INPUT type="image" src="http://merchant3.chinabank.com.cn/images/button_2.gif" > </form>
+</BODY></HTML>
+

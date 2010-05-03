@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :chinabanks
+
   map.resources :emails
 
   map.resources :orders
@@ -8,7 +10,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users
   map.resource :session
   map.resources :products
-
+  
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
@@ -52,6 +54,7 @@ ActionController::Routing::Routes.draw do |map|
   map.yesterday '/yesterday', :controller => "welcome",:action=>'yesterday'
   map.add_to_cart '/add_to_cart', :controller=>'welcome',:action=>'add_to_cart'
   map.add_to_order '/add_to_order',:controller=>'welcome',:action=>'add_to_order'
+
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.
