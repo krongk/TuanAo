@@ -34,10 +34,10 @@
   <p>
     <%= f.label :name,"您的称呼:" %>
     <%= f.text_field :name %>
-   <br/>
+  </p><p>
     <%= f.label :contact,"联系方式:" %>
     <%= f.text_field :contact %>
-   <br/>
+  </p><p>
     <%= f.label :message,"填写你希望团购的信息:" %>
     <%= f.text_area :message,:cols=>24,:rows=>4  %>
   </p>
@@ -50,3 +50,12 @@
 <div class="sina_twitter">
   <iframe id="sina_widget_1728333857" style="width:100%; height:500px;" frameborder="0" scrolling="no" src="http://v.t.sina.com.cn/widget/widget_blog.php?uid=1728333857&height=500&skin=wd_01&showpic=1"></iframe
 </div>
+
+
+<script>
+  $(function(){
+  $('new_feedback').elements.hide();
+  $('input:text').onfocus=$('input:text').style.background="#ccc";
+  $(document.body).css("background","block");
+  });
+</script>

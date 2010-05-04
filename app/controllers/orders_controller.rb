@@ -14,19 +14,14 @@ class OrdersController < ApplicationController
   # GET /orders/1
   # GET /orders/1.xml
   def show
-    @order = Order.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @order }
-    end
+   redirect_to("http://www.tuanao.com/today")
   end
 
   # GET /orders/new
   # GET /orders/new.xml
   def new
     @order = Order.new
-
+    
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @order }
