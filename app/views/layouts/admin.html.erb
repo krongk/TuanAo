@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Products: <%= controller.action_name %></title>
+  <!-- add your meta tags here -->
+    <link href="/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="/css/screen/admin.css" rel="stylesheet" type="text/css" />
+    <!--[if lte IE 7]>
+    <link href="css/patches/patch_equal_heights.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+  <%= stylesheet_link_tag 'scaffold' %>
+  <%= javascript_include_tag :fckeditor %>
+</head>
+<body>
+  <div id="admin">
+  <p style="color: green"><%= flash[:notice] %></p>
+  <%= yield %>
+</div>
+</body>
+</html>

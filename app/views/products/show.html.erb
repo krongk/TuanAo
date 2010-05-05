@@ -1,88 +1,69 @@
-<p>
-  <b>Title:</b>
+<h1>
   <%=h @product.title %>
-</p>
+</h1>
+<table width="780px" border="0">
+  <tr>
+    <td width="200px">
+      团品总数<br />
+      <%=h @product.total_count %>
+    </td>
+    <td>
+      团购基数
+      <%=h @product.base_count %>
+    </td>
+    <td rowspan="3">
+      <p>  开卖时间<br />
+        <%=h @product.started_at %>
+      </p><p>
+        结束时间<br />
+        <%=h @product.ended_at%></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="200px">
+      原价<br />
+      <%=h @product.original_price %>
+    </td>
+    <td>
+      折扣<br />
+      <%=h @product.discount %>
+    </td>
+  </tr>
+  <tr>
+    <td width="200px">
+      折扣后现价<br />
+      <%=h @product.now_price %>
+    </td>
+    <td>
+      为你节省了<br />
+      <%=h @product.save_price %>
+    </td>
+  </tr>
+</table>
+<div class="content2">
 
 <p>
-  <b>Total count:</b>
-  <%=h @product.total_count %>
+  <%=image_tag @product.picture %>
 </p>
-
+<hr/>
 <p>
-  <b>Sold count:</b>
-  <%=h @product.sold_count %>
+  <%= @product.summary %>
 </p>
-
+<hr/>
 <p>
-  <b>Original price:</b>
-  <%=h @product.original_price %>
+  <%= @product.details %>
 </p>
-
+<hr/>
 <p>
-  <b>Discount:</b>
-  <%=h @product.discount %>
+  <%= @product.contact %>
 </p>
-
+<hr/>
 <p>
-  <b>Now price:</b>
-  <%=h @product.now_price %>
+  <%= @product.comment %>
 </p>
-
-<p>
-  <b>Save price:</b>
-  <%=h @product.save_price %>
-</p>
-
-<p>
-  <b>Started at:</b>
-  <%=h @product.started_at %>
-</p>
-
-<p>
-  <b>Ended at:</b>
-  <%=h @product.ended_at %>
-</p>
-
-<p>
-  <b>Picture:</b>
-  <%=h @product.picture %>
-</p>
-
-<p>
-  <b>Summary:</b>
-  <%=h @product.summary %>
-</p>
-
-<p>
-  <b>Details:</b>
-  <%=h @product.details %>
-</p>
-
-<p>
-  <b>Contact:</b>
-  <%=h @product.contact %>
-</p>
-
-<p>
-  <b>Comment:</b>
-  <%=h @product.comment %>
-</p>
-
-<p>
-  <b>Status:</b>
-  <%=h @product.status %>
-</p>
-
-<p>
-  <b>Is publish:</b>
-  <%=h @product.is_publish %>
-</p>
-
-<p>
-  <b>Is ok:</b>
-  <%=h @product.is_ok %>
-</p>
+</div>
+<hr/>
 
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<%= link_to '编辑', edit_product_path(@product) %> |
+<%= link_to '返回', products_path %>

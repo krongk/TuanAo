@@ -1,9 +1,10 @@
 class ProductsController < ApplicationController
   before_filter :admin_required
+  layout "admin"
   # GET /products
   # GET /products.xml
   def index
-    @products = Product.all
+    @products = Product.paginate :order=>"created_at DESC", :page=>params[:page],:per_page=>20
   end
 
   # GET /products/1

@@ -1,12 +1,13 @@
 class EmailsController < ApplicationController
    before_filter :admin_required, :except=>[:new,:create]
+   layout :special_layout
   # GET /emails
   # GET /emails.xml
   def index
-    @emails = Email.all
+    @emails = Email.paginate :order=>"created_at DESC", :page=>params[:page], :per_page=>20
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html {render :layout=>'layouts/admin'}
       format.xml  { render :xml => @emails }
     end
   end
@@ -84,5 +85,11 @@ class EmailsController < ApplicationController
       format.html { redirect_to(emails_url) }
       format.xml  { head :ok }
     end
+  end
+
+  #special layout
+  private
+  def special_layout
+    self.action_name=="new"? "application":"admin"
   end
 end

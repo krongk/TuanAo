@@ -1,17 +1,28 @@
-#admin {
-	width:1000px;
+#admin {	
 	margin:0 auto;
 	text-align: left;
+	background-color:#FFF;
+	padding:20px;
+}
+#admin h1,h2{
+  	background-color: #933;
+	width: 780px;
+	padding: 4px;
+	border: 1px solid #900;
+	font-family: "微软雅黑";
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #FFF;
 }
 #admin .content1 {
-	width:1000px;
+	
 }
 #admin .content2 {
-	width:800px;
+	width:780px;
 }
 #admin .title {
 	background-color: #933;
-	width: 780px;
+
 	padding: 4px;
 	border: 1px solid #900;
 	font-family: "微软雅黑";

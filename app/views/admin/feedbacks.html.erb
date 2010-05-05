@@ -1,8 +1,8 @@
 <h1>意见反馈列表</h1>
 <div class="content1">
-<table width="100%" bgcolor="#fff" border="1">
+<table>
   <tr>
-    <th colspan="3">菜单</th>
+    <th colspan="2">菜单</th>
     <th>编号</th>
     <th>称呼</th>
     <th>联系方式</th>
@@ -14,7 +14,6 @@
 
 <% @feedbacks.each do |feedback| %>
   <tr>
-     <td><%= link_to '详细', feedback %></td>
     <td><%= link_to '修改', edit_feedback_path(feedback) %></td>
     <td><%= link_to '删除', feedback, :confirm => 'Are you sure?', :method => :delete %></td>
     <td><%=h feedback.id %></td>
