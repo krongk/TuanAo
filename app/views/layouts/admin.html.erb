@@ -11,13 +11,23 @@
     <!--[if lte IE 7]>
     <link href="/css/patches/patch_equal_heights.css" rel="stylesheet" type="text/css" />
     <![endif]-->
-    <%= stylesheet_link_tag 'layout' %>
+    <%= stylesheet_link_tag 'layout','screen/admin' %>
     <%= javascript_include_tag 'jquery','jquery.validate','jquery.metadata','application' %>
     <%= javascript_include_tag :fckeditor %>
   </head>
   <body>
     <div id="admin">
-      <p style="color: green"><%= flash[:notice] %></p>
+      <% if flash[:notice] %> <div class="warning"><%= flash[:notice] %></div><% end %>
+      <h1>后台管理菜单</h1><div id="menu">
+<ul>
+  <li><%=link_to "用户注册信息","/admin/users"%></li>
+  <li><%=link_to "团品列表","/admin/products"%></li>
+  <li><%=link_to "订单列表","/admin/orders"%></li>
+  <li><%=link_to "商家留言信息","/admin/sellers"%></li>
+  <li><%=link_to "意见反馈列表","/admin/feedbacks"%></li>
+  <li><%=link_to "邮件订阅列表","/emails"%></li>
+  <li><a href="#">&nbsp;</a></li>
+</ul></div>
       <%= yield %>
     </div>
   </body>
