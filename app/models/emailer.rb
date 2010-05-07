@@ -4,7 +4,7 @@ class Emailer < ActionMailer::Base
       @recipients = recipient
       @from = 'kenrome@gmail.com'
       @sent_on = sent_at
-	    @body["title"] = 'This is title'
+	    @body["title"] = '你好,欢迎访问我们网站'
   	  @body["email"] = 'kenrome@gmail.com'
    	  @body["message"] = message
       @headers = {}

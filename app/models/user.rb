@@ -82,7 +82,7 @@ class User < ActiveRecord::Base
   def recently_activated?
     @activated
   end
-
+  
   protected
     # before filter 
     def encrypt_password
