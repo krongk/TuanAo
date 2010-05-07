@@ -36,7 +36,7 @@ class UsersController < ApplicationController
       @user= User.find_by_email(params[:email])
     if @user
       
-      sendmail(@user.email)
+      sendmail(@user)
     else
       flash[:notice]="抱歉，没有这个用户"
     end
@@ -45,10 +45,11 @@ class UsersController < ApplicationController
     end
   end
   #send email
-  def sendmail(email)
-      recipient = email
+  def sendmail(user)
+      recipient = user.email
       subject ="密码找回"
-      message = "内容部分"
+      message = "<p>您在美团网申请了重设密码，请点击下面的链接，然后根据页面提示完成密码重设：</p>
+      http://www.meituan.com/account/reset/NWTBnTZ1sAjmDqdq_bTr2MSZL9N_K55K"
       Emailer.deliver_contact(recipient, subject, message)
       return if request.xhr?
       flash[:notice1]="操作成功!请检查你的邮箱."
