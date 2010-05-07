@@ -65,7 +65,7 @@ class UsersController < ApplicationController
       recipient = user.email
       subject ="团奥网密码找回"
       message = "<p>您在团奥网申请了重设密码，请点击下面的链接，然后根据页面提示完成密码重设：</p>
-      http://www.tuanao.com/users/#{user.id}?active=#{user.activation_code}"
+      http://www.tuanao.com/users/#{user.id}/edit?active=#{user.activation_code}"
       Emailer.deliver_contact(recipient, subject, message)
       return if request.xhr?
       flash[:notice1]="操作成功!请检查你的邮箱."

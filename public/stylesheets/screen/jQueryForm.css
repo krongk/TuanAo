@@ -43,5 +43,7 @@ div.error { display: none; }
 
 input.checkbox { border: none }
 
+
+
 input.error { border: 1px dotted red; }
 form.cmxform .gray * { color: gray; }
