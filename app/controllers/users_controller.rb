@@ -39,6 +39,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.update_attributes(params[:user])
         flash[:notice] = '用户修改成功.'
+        self.current_user = @user
         format.html { redirect_to('/') }
         format.xml  { head :ok }
       else
@@ -68,7 +69,7 @@ class UsersController < ApplicationController
       http://www.tuanao.com/users/#{user.id}/edit?active=#{user.activation_code}"
       Emailer.deliver_contact(recipient, subject, message)
       return if request.xhr?
-      flash[:notice1]="操作成功!请检查你的邮箱."
+      flash[:notice1]="操作成功!请检查你的邮箱.并根据油箱提示修改密码！"
       redirect_to "/account/forget_password"
   end
 
