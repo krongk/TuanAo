@@ -30,4 +30,33 @@ class UsersController < ApplicationController
     redirect_back_or_default('/')
   end
 
+  #forgot password
+  def forget_password
+    if params[:email]
+      @user= User.find_by_email(params[:email])
+    if @user
+      
+      sendmail(@user.email)
+    else
+      flash[:notice]="抱歉，没有这个用户"
+    end
+    else
+      
+    end
+  end
+  #send email
+  def sendmail(email)
+      recipient = email
+      subject ="密码找回"
+      message = "内容部分"
+      Emailer.deliver_contact(recipient, subject, message)
+      return if request.xhr?
+      flash[:notice1]="操作成功!请检查你的邮箱."
+      redirect_to "/account/forget_password"
+  end
+  
+  def reset_password
+  
+  end
+
 end

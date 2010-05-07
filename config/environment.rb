@@ -36,11 +36,25 @@ Rails::Initializer.run do |config|
   # Run "rake -D time" for a list of tasks for finding time zone names.
   config.time_zone = 'UTC'
 
+  #config the mailer
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_content_type = "text/html"
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 end
-
+#set the alipay
 ActiveMerchant::Billing::Integrations::Alipay::KEY = "2pyzptdb47wo13fxdhsy9dq8g79z0wie"
 ActiveMerchant::Billing::Integrations::Alipay::ACCOUNT = "2088102635663013"
 ActiveMerchant::Billing::Integrations::Alipay::EMAIL = "kenrome@163.com"
+
+#set mailer
+ActionMailer::Base.smtp_settings = {
+    :tls => true,
+    :address => "smtp.gmail.com",
+    :port => "587",
+    :domain => "www.tuanao.com",
+    :authentication => :plain,
+    :user_name => "kenrome",
+    :password => "0020010"
+  }

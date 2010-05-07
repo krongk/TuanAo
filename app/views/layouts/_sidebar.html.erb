@@ -26,20 +26,24 @@
         </div>
       </div>
       <br/>-->
-    
+<script language="javascript">
+$(document).ready(function(){
+  $("#sidefeedForm").validate();
+})
+</script>
 <div class="side_whant">
-  <% form_for(@feedback=Feedback.new) do |f| %>
+  <% form_for(@feedback=Feedback.new,:html=>{:id=>'sidefeedForm'}) do |f| %>
   <%= f.error_messages %>
 
   <p>
     <%= f.label :name,"您的称呼:" %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name,:class=>"required" %>
   </p><p>
     <%= f.label :contact,"联系方式:" %>
-    <%= f.text_field :contact %>
+    <%= f.text_field :contact,:class=>"required" %>
   </p><p>
     <%= f.label :message,"填写你希望团购的信息:" %>
-    <%= f.text_area :message,:cols=>24,:rows=>4  %>
+    <%= f.text_area :message,:cols=>24,:rows=>4 ,:class=>"required" %>
   </p>
   <p>
     <%= f.submit '提  交' %>
@@ -48,7 +52,7 @@
 </div>
 
 <div class="sina_twitter">
-  <iframe id="sina_widget_1728333857" style="width:100%; height:500px;" frameborder="0" scrolling="no" src="http://v.t.sina.com.cn/widget/widget_blog.php?uid=1728333857&height=500&skin=wd_01&showpic=1"></iframe
+  <iframe id="sina_widget_1728333857" style="width:100%; height:500px;" frameborder="0" scrolling="no" src="http://v.t.sina.com.cn/widget/widget_blog.php?uid=1728333857&height=500&skin=wd_01&showpic=1"></iframe>
 </div>
 
 
