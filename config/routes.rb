@@ -56,6 +56,7 @@ ActionController::Routing::Routes.draw do |map|
   map.add_to_order '/add_to_order',:controller=>'welcome',:action=>'add_to_order'
   map.forget_password '/account/forget_password',:controller=>'users',:action=>'forget_password'
   map.reset_password '/account/reset_password',:controller=>'users',:action=>'reset_password'
+
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.

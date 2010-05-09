@@ -115,8 +115,6 @@
   <!-- End: IE Column Clearing -->
 </div>
 <!-- end: #col3 -->
-
-
 <!--计时器-->
 <script language="JavaScript">
   var overDate = <%=(@product.ended_at.to_i+24*60*60)*1000%>;//截止时间
@@ -145,8 +143,5 @@
     }
     setTimeout("GetRTime()",100);
   }
-  $(document).ready(function(){
-    GetRTime();
-  });
 </script>
 

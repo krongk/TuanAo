@@ -12,6 +12,12 @@
     <![endif]-->
     <%= stylesheet_link_tag 'layout'%>
     <%= javascript_include_tag 'jquery','jquery.validate','jquery.metadata','application' %>
+    <script language="javascript">
+    <% if controller.action_name =="today" -%>
+      //在today页面添加计时器启动方法
+       $(document).ready(function(){ GetRTime(); });
+     <% end  -%>
+     </script>
   </head>
   <body>
     <!-- skip link navigation -->
@@ -29,7 +35,5 @@
     <%=render :partial=>'layouts/footer'%>
 
     <%=render :partial=>'layouts/foot_js'%>
-    <script language="javascript" type="text/javascript" src="http://js.users.51.la/3739950.js"></script>
-    <noscript><a href="http://www.51.la/?3739950" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/3739950.asp" style="border:none" /></a></noscript>
   </body>
 </html>
