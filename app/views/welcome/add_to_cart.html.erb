@@ -1,44 +1,36 @@
-<center>
-<link href="/stylesheets/order.css" rel="stylesheet" type="text/css" />
+<div id="col1">
 <div class="note">注: 为了让更多的人享受到团购低价的实惠,本次团品每人只能购买一件.</div>
 <form id="form1" class="yform full" name="form1" method="post" action="/add_to_order" onsubmit="return check_quantity();">
   <fieldset class="set">
     <legend class="title">填写订单</legend>
-  <table width="700" border="0">
-    <tr>
-      <td class="bg_title" width="343" height="37">产品</td>
-      <td class="bg_title" width="77">单价</td>
-      <td class="bg_title" width="51">&nbsp;</td>
-      <td class="bg_title" width="109">数量</td>
-      <td class="bg_title" width="98">&nbsp;</td>
-    </tr>
-<% for item in @cart.items do %>
+    <table cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <th width="300px" height="45px">预订内容</th>
+              <th width="60px" align="center">单价</th>
+              <th align="center">购买数量</th>
+              <th>价格</th>
+            </tr>
+ <% for item in @cart.items do %>
     <input type="hidden" name="product_id" value="<%=item.id%>"/>
-    <tr>
-      <td rowspan="2"><%=h item.title%></td>
-      <td class="bg_title" height="47">￥<span id="product_now_price"><%=h item.now_price %></span></td>
-      <td class="bg_title" >×</td>
-      <td class="bg_title" >
-        <input name="quantity" type="text" readonly="readonly" id="product_quantity" value="1" size="5" maxlength="5" onchange="check_quantity();" />
-      	<span id="quantity_msg"></span>
-       </td>
-      <td class="bg_title" ><span id="product_total_price">&nbsp;</span></td>
-    </tr>
+            <tr>
+              <td><%=h item.title%></td>
+              <td align="center"><%=h item.now_price %></td>
+              <td align="center"><input onblur="javascript:countTotal();" name="buyNum" id="buyNum" value="1" title="购买的数量" type="text" size="4" class="input_b" /></td>
+              <td id="totalPriceWithoutDiscount"><%=h item.now_price %>元</td>
+            </tr>
  <% end %>
-    <tr>
-      <td height="44">&nbsp;</td>
-      <td>&nbsp;</td>
-      <td class="bg_title" ><span id="order_txt">应付金额:￥</span></td>
-      <td class="bg_title" ><span id="order_price1"><input type="input" readonly="readonly" id="order_price"  name="order_price" value="<%= item.price %>"/></span>
-      </td>
-    </tr>
-    <tr>
-      <td height="46" colspan="5" align="center">
-        <input type="submit" name="提交" id="submit" value="确定" />      </td>
-</tr>
-  </table>
+            <tr height="35px">
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td align="right">总价：</td>
+              <td id="totalPrice" class="red"><%= item.price %>元</td>
+            </tr>
+          </tbody>
+ </table>
   </fieldset>
    <%= tag(:input, :type => "hidden", :name =>request_forgery_protection_token.to_s, :value =>form_authenticity_token) %>
+   <%= image_submit_tag("/images/btn1.png") %>
 </form>
 <script language="javascript">
 function check_quantity(){
@@ -62,4 +54,7 @@ function check_quantity(){
   }
 }
 </script>
-</center>
+</div>
+<div id="col3" style="height:300px;">
+
+</div>

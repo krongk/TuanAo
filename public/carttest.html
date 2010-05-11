@@ -4,12 +4,11 @@
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <title>Equal Heights with YAML's subtemplates</title>
 <!-- add your meta tags here -->
-<link href="css/layout.css" rel="stylesheet" type="text/css" />
 <!--[if lte IE 7]>
 <link href="css/patches/patch_equal_heights.css" rel="stylesheet" type="text/css" />
 <![endif]-->
-<link href="stylesheets/order.css" rel="stylesheet" type="text/css" />
-<link href="css/screen/admin.css" rel="stylesheet" type="text/css" />
+
+<link href="stylesheets/layout.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <!-- skip link navigation -->
@@ -22,8 +21,7 @@
   <div class="page">
     <div id="header" role="banner">
       <div id="topnav" role="contentinfo">
-        <a href="#">» 邮件订阅每日最新团购</a> | <a href="#">  » 邀请好友赠送10个积分</a> 
-      </div>
+        <a href="#">» 邮件订阅每日最新团购</a> | <a href="#">  » 邀请好友赠送10个积分</a>      </div>
       <h1><img src="images/logo2.png" height="50" alt="Tuanao.com" /> </h1>
       
       <div id="chcity">
@@ -38,7 +36,6 @@
                     <div class="other"><a href="maillist/subscribe/new.html">其他城市？</a></div>
                 </div>
             </div></div><!--change city end-->
-      
       </div>
     <div id="nav" role="navigation">
       <div class="hlist">
@@ -63,9 +60,7 @@
                 <td width="46%" height="90" align="right"><span class="price"><%=number_to_currency(@product.now_price)%></span></td>
                 <td width="54%"><form action="/welcome/add_to_cart/<%=@product.id%>" method="post">
                     <%= image_submit_tag "/images/bt_buy.gif" %>
-                    <%= tag(:input, :type => "hidden", :name =>request_forgery_protection_token.to_s, :value =>form_authenticity_token) %> </form>
-
-                </td>
+                    <%= tag(:input, :type => "hidden", :name =>request_forgery_protection_token.to_s, :value =>form_authenticity_token) %> </form>                </td>
               </tr>
             </table>
           </div>
@@ -135,8 +130,27 @@
   <div class="twoColMain">
     <div id="container">
       <div id="mainBody">
-        <p><%=@product.details%></p>
-        <p><%=@product.comment%></p>
+        <table cellspacing="0" cellpadding="0" class="pay_cart">
+          <tbody>
+            <tr>
+              <th>预订内容</th>
+              <th>单价</th>
+              <th>购买数量</th>
+              <th>价格</th>
+            </tr>
+            <tr>
+              <td>恋舍休闲餐厅超值湘菜套餐（6道菜）</td>
+              <td>￥68.0</td>
+              <td><input onblur="javascript:countTotal();" name="buyNum" id="buyNum" value="1" title="购买的数量" type="text" /></td>
+              <td id="totalPriceWithoutDiscount">68元</td>
+            </tr>
+            <tr>
+              <td colspan="3">    总价：</td>
+              <td id="totalPrice">68元</td>
+            </tr>
+          </tbody>
+        </table>
+<p>&nbsp;</p>
       </div>
       <div id="mainSide"><div class="centent">
           <%=@product.contact%>
@@ -178,8 +192,7 @@
     <!-- A single web result, full structure defined below -->
     <div class="gs-result gs-webResult"></div>
   </div>
-  ...
-</div>
+  ...</div>
 
 <!-- Similar pattern for local, blog, etc. -->
 <div class="gsc-results gsc-localResult"></div>
@@ -270,8 +283,6 @@
         </ul>
     </div>
 </div> <!--end foot-->
-      
-      
   </div>
 </div>
 <!-- full skiplink functionality in webkit browsers -->

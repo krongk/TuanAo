@@ -235,6 +235,12 @@
 	margin-left: 0px;
 }
 /*yesterday end*/
+/*pay ment */
+.pay{height:300px;border: 4px solid #66cccc;margin:10px 0; padding:0 12px;}
+.pay ul{}
+.pay ul li{ float:left; margin:12px; position:relative; display:block; list-style-type:circle;}
+
+
 #deal-share .deal-share-fix{float:left;width:10px;height:30px;background:url(i/bg-share-corner.gif) no-repeat 100% -50px;}#deal-share .deal-share-top{float:left;_display:inline;margin-left:24px;background:url(i/bg-share-corner.gif) no-repeat 0 0;}#deal-share .deal-share-links{float:left;width:500px;height:23px;padding:7px 0 0 20px;}#deal-share .deal-share-links h4{float:left;font-weight:normal;}#deal-share .deal-share-links ul{zoom:1;}#deal-share .deal-share-links li{float:left;margin-top:2px;margin-left:3px;}#deal-share a{float:left;dwidth:30px;height:16px;line-height:16px;*line-height:18px;padding-left:20px;background:url(i/icons-share.gif) no-repeat 0 0;margin-right:10px;color:#000;font-size:12px;font-family:Helvetica,arial,sans-serif;outline:0;}#deal-share a:hover{color:#0981BE;}#deal-share a img{margin-right:2px;vertical-align:-2px;}#deal-share .kaixin{background-position:0 -40px;}#deal-share .renren{background-position:0 -80px;}#deal-share .douban{background-position:0 -120px;}#deal-share .email{background-position:0 -161px;}#deal-share .sina{background-position:0 -201px;}#deal-share-im-c{display:none;clear:both;width:483px;margin-left:24px;}#deal-share-im-c .deal-share-im-b{height:50px;padding:10px 10px 10px 20px;border-left:1px solid #89b4d6;border-right:1px solid #89b4d6;background-color:#e5f8ff;}#deal-share-im-c .f-input{width:345px;*width:262px;}#deal-share-im-c .formbutton{display:none;*display:inline;}
 
 #deal-intro{clear:both;padding:25px 14px 15px;border:2px solid #89b4d4;background:#fff;}

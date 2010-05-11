@@ -307,4 +307,11 @@
   
   /* IE5.x & IE6 */
   * html .yform { padding-top:10px; }
+  .input_b {
+	height: 30px;
+	font-size: 16px;
+	text-align: center;
+	font-weight: bold;
+	vertical-align: middle;
+}
 }

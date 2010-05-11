@@ -1,4 +1,5 @@
-<div style="border: 4px solid #66cccc;padding:20px;" class="highlight">
+<div id="col1">
+<div class="pay highlight">
   <h3>订单支付确认</h3><hr/>
   <link href="/stylesheets/order.css" rel="stylesheet" type="text/css" />
   <p>
@@ -9,10 +10,10 @@
   </p>
   <br/><br/>
   <h3>请选择支付方式</h3><hr/>
-  <form action="https://pay3.chinabank.com.cn/Payto" method="post" accept-charset="unicode"><INPUT type="hidden" name="v_mid" value="21701769" > <INPUT type="hidden" name="v_id" value="134566" > <INPUT type="hidden" name="v_url" value="http://www.tuanao.com/today" > <INPUT type="hidden" name="quantity" value="1" > <INPUT type="hidden" name="v_amount" value="55" >网银在线：<br/><INPUT type="image" src="http://merchant3.chinabank.com.cn/images/button_2.gif" ></form>
-
-<hr/>
-<p>支付宝:
+  <ul><li>
+  <form action="https://pay3.chinabank.com.cn/Payto" method="post" accept-charset="unicode"><INPUT type="hidden" name="v_mid" value="21701769" > <INPUT type="hidden" name="v_id" value="134566" > <INPUT type="hidden" name="v_url" value="http://www.tuanao.com/today" > <INPUT type="hidden" name="quantity" value="1" > <INPUT type="hidden" name="v_amount" value="55" ><INPUT type="image" src="/images/pay4.gif" ></form>
+    </li><li>
+<!--alipay-->
 <% payment_service_for 'payment code', ActiveMerchant::Billing::Integrations::Alipay::ACCOUNT,
                             :service => :alipay,
                             :html => { :id => 'payment-form', :method => :get } do |service| %>
@@ -34,6 +35,10 @@
   <% service.receive :name => '宋学江', :address => '成都市火车南站东路69号美丽南庭3-1128号', :zip => '610041', :phone => '15928661802', :mobile => '15928661802' %>
   <% service.sign %>
 <% end %>
-<%= button_to_function "点击进入支付宝支付页面", "document.getElementById('payment-form').submit();" %>
-</p>
+<input src="/images/pay2-1.gif?1273538347" type="image" onclick="document.getElementById('payment-form').submit();;"/>
+    </li></ul>
+</div>
+</div>
+<div id="col3" style="height:300px;">
+
 </div>
