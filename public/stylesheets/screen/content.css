@@ -221,7 +221,7 @@
   font-size: 12px;
   list-style: square;
 }
-/*****/
+/**paginate style with will_paginate plugin***/
 .pagination {
     padding: 3px;
     margin: 3px;
@@ -251,6 +251,66 @@
     border: 1px solid #eee;
     color: #ddd;
   }
+ /*side bar round corner style*/
+.ROUND-BOX {
+	margin:6px auto;
+}
+.ROUND-BOX H2{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	font-weight: bold;
+	margin: 4px;
+	padding: 0px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FC9;
+}
+.ROUND-BOX .BOX-CONTENT{}
+.TU {
+	margin-right: 3px;
+	margin-left: 3px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #FFCC99;
+}
+.TTU {
+	margin-right: 1px;
+	margin-left: 1px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #FFCC99;
+}
+.BBU {
+	margin-right: 1px;
+	margin-left: 1px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #FFCC99;
+}
+.BU {
+	margin-right: 3px;
+	margin-left: 3px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #FFCC99;
+}
+.CU {
+	padding: 4px;
+	border-top-width: 3px;
+	border-right-width: 6px;
+	border-bottom-width: 3px;
+	border-left-width: 6px;
+	border-top-style: solid;
+	border-top-color: #FFCC99;
+	border-right-color: #FFCC99;
+	border-bottom-color: #FFCC99;
+	border-left-color: #FFCC99;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
  /**
   * (en) Emphasizing external Hyperlinks via CSS
   * (de) Hervorhebung externer Hyperlinks mit CSS

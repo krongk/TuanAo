@@ -1,19 +1,25 @@
 <div id="col1">
 <div class="pay highlight">
-  <h3>订单支付确认</h3><hr/>
-  <link href="/stylesheets/order.css" rel="stylesheet" type="text/css" />
-  <p>
-    用户：<%= @order.user.login %>
-  </p>
-  <p>
-    需要支付金额：￥<%= @order.order_price %>
-  </p>
-  <br/><br/>
-  <h3>请选择支付方式</h3><hr/>
-  <ul><li>
-  <form action="https://pay3.chinabank.com.cn/Payto" method="post" accept-charset="unicode"><INPUT type="hidden" name="v_mid" value="21701769" > <INPUT type="hidden" name="v_id" value="134566" > <INPUT type="hidden" name="v_url" value="http://www.tuanao.com/today" > <INPUT type="hidden" name="quantity" value="1" > <INPUT type="hidden" name="v_amount" value="55" ><INPUT type="image" src="/images/pay4.gif" ></form>
-    </li><li>
-<!--alipay-->
+  <h3>第二步：支付订单</h3><hr/>
+  <table width="100%" class="table_b">
+  <tr>
+    <th width="192" height="45" align="center" valign="middle" bgcolor="#ddd">用户</th>
+    <th width="217" align="center" valign="middle" bgcolor="#ddd"> 需要支付金额</th>
+  </tr>
+  <tr>
+    <td height="51" align="center" valign="middle"><%= @order.user.login %></td>
+    <td align="center" valign="middle"><%= @order.order_price %>元</td>
+  </tr>
+  <tr>
+    <th colspan="2"  bgcolor="#ddd" height="30">&nbsp;请选择支付方式</th>
+  </tr>
+  <tr>
+    <td height="51" align="center" valign="middle">
+ <form action="https://pay3.chinabank.com.cn/Payto" method="post" accept-charset="unicode"><INPUT type="hidden" name="v_mid" value="21701769" > <INPUT type="hidden" name="v_id" value="134566" > <INPUT type="hidden" name="v_url" value="http://www.tuanao.com/today" > <INPUT type="hidden" name="quantity" value="1" > <INPUT type="hidden" name="v_amount" value="55" ><INPUT type="image" src="/images/pay4.gif" ></form>
+    </td>
+    <td align="center" valign="middle">
+      
+ <!--alipay-->
 <% payment_service_for 'payment code', ActiveMerchant::Billing::Integrations::Alipay::ACCOUNT,
                             :service => :alipay,
                             :html => { :id => 'payment-form', :method => :get } do |service| %>
@@ -36,9 +42,16 @@
   <% service.sign %>
 <% end %>
 <input src="/images/pay2-1.gif?1273538347" type="image" onclick="document.getElementById('payment-form').submit();;"/>
-    </li></ul>
+      
+    </td>
+  </tr>
+</table>
 </div>
 </div>
 <div id="col3" style="height:300px;">
-
+ <div class="side_box">
+      <div class="side_top"><h3>使用帮助</h3></div>
+      <div class="side_doc">sdf  售32元！价值80元的朝阳门博纳悠唐影城全时段1:1兑换券（可直接兑换3D电    售32元！价值80元的朝阳门博纳悠唐影城全时段1:1兑换券（可直接兑换3D电  </div>
+       <div class="side_bottom">sdf</div>
+    </div>
 </div>

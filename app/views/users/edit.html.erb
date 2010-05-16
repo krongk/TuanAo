@@ -8,8 +8,10 @@
   <%= error_messages_for :user %>
   <% form_for @user,:html=>{:id=>"yform",:class=>'yform'} do |f| -%>
   <%= f.hidden_field :login %><%= f.hidden_field :email%>
-  <h2>你好，<%=@user.login%></h2>
-  <p>请重新设定您的新密码.</p>
+  <h3>你好，<%=@user.login%></h3>
+  <p>你使用的邮箱是: <%=@user.email%></p>
+  <hr/>
+  <p>设定新密码.</p>
     <p><label for="password">新密码：</label>
       <%= f.password_field :password,:class=>"{required:true,minlength:5}" %></p>
     <p><label for="password_confirmation">密码确认：</label>

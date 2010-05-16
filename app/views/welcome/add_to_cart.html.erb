@@ -1,60 +1,67 @@
 <div id="col1">
-<div class="note">注: 为了让更多的人享受到团购低价的实惠,本次团品每人只能购买一件.</div>
-<form id="form1" class="yform full" name="form1" method="post" action="/add_to_order" onsubmit="return check_quantity();">
-  <fieldset class="set">
-    <legend class="title">填写订单</legend>
-    <table cellspacing="0" cellpadding="0" width="100%">
-          <tbody>
-            <tr>
-              <th width="300px" height="45px">预订内容</th>
-              <th width="60px" align="center">单价</th>
-              <th align="center">购买数量</th>
-              <th>价格</th>
-            </tr>
- <% for item in @cart.items do %>
-    <input type="hidden" name="product_id" value="<%=item.id%>"/>
+  <div class="note">注: 为了让更多的人享受到团购低价的实惠,本次团品每人购买的数量是有限定的.</div>
+
+<div class="pay highlight">
+  <form id="cartForm"  name="cartForm" method="post" action="/add_to_order" onsubmit="return check_quantity();">
+   <h3>第一步：订单确认</h3><hr/>
+      <table cellspacing="0" cellpadding="0" width="100%">
+        <tbody>
+          <tr>
+            <th width="300px" height="45px">预订内容</th>
+            <th width="60px" align="center">单价</th>
+            <th align="center">购买数量</th>
+            <th>价格</th>
+          </tr>
+          <% for item in @cart.items do %>
+            <input type="hidden" name="product_id" value="<%=item.id%>"/>
             <tr>
               <td><%=h item.title%></td>
               <td align="center"><%=h item.now_price %></td>
-              <td align="center"><input onblur="javascript:countTotal();" name="buyNum" id="buyNum" value="1" title="购买的数量" type="text" size="4" class="input_b" /></td>
-              <td id="totalPriceWithoutDiscount"><%=h item.now_price %>元</td>
-            </tr>
- <% end %>
-            <tr height="35px">
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-              <td align="right">总价：</td>
-              <td id="totalPrice" class="red"><%= item.price %>元</td>
-            </tr>
+              <td align="center"><input onblur="javascript:countTotal(this);" name="buyNum" id="buyNum" value="1" title="购买的数量" type="text" size="4" class="input_b required number" /></td>
+              <td><span id="totalPriceWithoutDiscount"><%=h item.now_price %></span>元</td>
+            </tr
+          <% end %>
+          <tr height="35px">
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td align="right">总价：</td>
+            <td class="red"><span id="totalPrice"><%= item.price %></span>元</td>
+          </tr>
           </tbody>
- </table>
-  </fieldset>
-   <%= tag(:input, :type => "hidden", :name =>request_forgery_protection_token.to_s, :value =>form_authenticity_token) %>
-   <%= image_submit_tag("/images/btn1.png") %>
-</form>
-<script language="javascript">
-function check_quantity(){
-  //alert(q);
-  var q=document.getElementById("product_quantity").value;
-  document.getElementById("product_quantity").style.color="#000";
-  var now_price = document.getElementById("product_now_price").innerHTML;
-  //alert(now_price);
-  //var total_price = document.getElementById("product_total_price").innerHTML;
-  //alert(total_price);
-  var order_price = document.getElementById("order_price").value;
-  //alert(order_price);
-  var total = eval(q*now_price);
-  if(total*1 != total){
-	document.getElementById("product_quantity").style.color="#f60";
-  	alert("请输入合法数字");return false;
-  }else{
-	  //document.getElementById("product_total_price").innerHTML=total;
-	  document.getElementById("order_price").value=total;
-	  return true;
-  }
-}
-</script>
+        </table>
+      <input type="hidden" id="order_price" name="order_price" value="<%= item.price %>"/>
+      <%= tag(:input, :type => "hidden", :name =>request_forgery_protection_token.to_s, :value =>form_authenticity_token) %>
+      <center><%= image_submit_tag("/images/bt_submit.gif") %></center>
+    </form>
+    <script language="javascript">
+      $(document).ready(function(){
+        //添加表单验证
+        $("#cartForm").validate();
+      });
+      function countTotal(num){
+        if(num.value<=0){
+          alert("请购买至少1件团品");
+          num.value=1;
+        }else if(num.value>10){
+          alert("由于优惠有限,每个用户最多只能购买小于10件团品!");
+          num.value=1;
+       }else if(num.value*1 != num.value){
+         alert("请输入合法数字！");
+       }else{
+         var d=document.getElementById("totalPriceWithoutDiscount").innerHTML;
+         var total =num.value*d;
+         document.getElementById("totalPrice").innerHTML=total;
+          document.getElementById("order_price").value=total;
+       }
+      }
+    </script>
 </div>
-<div id="col3" style="height:300px;">
-
 </div>
+  <div id="col3" style="height:300px;">
+ <div class="ROUND-BOX"><div class="TU"></div><div class="TTU"></div><div class="CU">
+	<h2>明日团品你来定...</h2>
+    <div class="BOX-CONTENT">
+团奥网运营模式：每天推出一个折扣足够低的精品团购项目，限时限量，过期不候。团奥网致力于为大家整合超低价超实惠商品 让您享受秒杀的体验，团购的快乐！我们的商品是什么？您先说了算。请在以下即将推出的团品中选择你最想要购
+	</div>
+</div><div class="BBU"></div><div class="BU"></div></div>
+  </div>

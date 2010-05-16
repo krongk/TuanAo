@@ -1,5 +1,14 @@
 class UsersController < ApplicationController
-
+  before_filter :login_required, :only=>[:show,:edit,:update]
+  #show
+  def show
+    @user = self.current_user
+    @orders =self.current_user.orders.paginate :order=>"created_at DESC", :page=>params[:page],:per_page=>20
+  end
+  #user orders
+  def orders
+   
+  end
   # render new.rhtml
   def new
   end
@@ -20,7 +29,7 @@ class UsersController < ApplicationController
       render :action => 'new'
     end
   end
-
+  #active email
   def activate
     self.current_user = params[:activation_code].blank? ? false : User.find_by_activation_code(params[:activation_code])
     if logged_in? && !current_user.active?
@@ -31,7 +40,7 @@ class UsersController < ApplicationController
   end
   #re password
   def edit
-    @user = User.find_by_activation_code(params[:active])
+    @user = User.find_by_activation_code(params[:active]) || self.current_user
   end
   def update
     @user = User.find(params[:id])

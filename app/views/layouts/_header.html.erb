@@ -19,7 +19,9 @@
       <!--<li><a href="/city/beijing">同城团购</a></li>-->
     </ul>
     <% if current_user %>
-    <span>&nbsp;&nbsp;&nbsp;&nbsp;你好，<%=current_user.login%>&nbsp;&nbsp;<a href="/logout">退出</a></span>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;你好，<%=current_user.login%>
+      <%=link_to "进入控制面板", user_path(current_user)%>
+      &nbsp;&nbsp;<a href="/logout">退出</a></span>
     <% else -%>
     <span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/login">登录</a>&nbsp;&nbsp;<a href="/signup">注册</a></span>
     <% end -%></div>

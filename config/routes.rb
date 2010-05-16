@@ -1,6 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :chinabanks
+  map.resources :users do |m|
+    m.resources :orders
+  end
 
+  map.resources :chinabanks
   map.resources :emails
 
   map.resources :orders
@@ -10,7 +13,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users
   map.resource :session
   map.resources :products
-  
+ 
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
