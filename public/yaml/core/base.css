@@ -203,46 +203,8 @@
   /* (de) Vorbereitung für absolute Positionierungen innerhalb der Inhaltsspalten */
   #col1_content, #col2_content, #col3_content { position:relative; }
 
- /*-------城市切换-------------------------------------------------------------------------------------*/
-#chcity .guides{position:absolute;left:354px;top:54px;z-index:2;}
-#chcity .city{float:left;width:73px;height:25px;line-height:25px;background:url(../../images/bg-guides-city.gif) no-repeat 0 0;}
-#chcity .city h2{text-align:center;color:#fff;font-size:14px; font-weight:bold;}
-#chcity .change{float:left;width:80px;padding:3px 8px;*padding-top:5px;_padding-top:3px;color:#009999;font-size:12px;cursor:pointer;}
-#chcity .city-list{display:none;clear:both;float:left;width:280px;margin-top:5px;padding:5px 5px;background:#66cccc;}
-#chcity .city-list ul{float:left;padding-bottom:5px;list-style-type: none;}
-#chcity .city-list li{float:left;width:80px;margin-bottom:5px;margin-left:0px;dborder:1px dashed #666;list-style-type: none;}
-#chcity .city-list li a{display:block;padding:2px 5px;text-align:center;color:#333;}
-#chcity .city-list li a:hover{background:#009999;color:#fff;}
-#chcity .city-list li.current a{background:#ffffff;color:#009999;}
-#chcity .city-list li.current a:hover{color:#399;}
-#chcity .city-list .other{clear:both;border-top:1px dashed #666;padding-top:5px;font-size:12px;zoom:1;}
-#chcity .city-list .other a{float:right;width:60px;padding:2px 5px;color:#399;}
-#chcity .city-list .other a:hover{background:#666;color:#399;;text-decoration:none;}
-/*-------页脚效果-------------------------------------------------------------------------------------*/
-#foot{
-	float:left;
-	position:relative;
-	width:80em;
-	height:240px;
-	background-image: url(../../images/bg_ft.png);
-	background-repeat: repeat-x;
-	background-position: 30 40;
-	padding:0;
-	margin-left:-10px;
-	text-align:center;
-}
-#ft .contact{height:58px;line-height:58px;font-weight:bold;text-align:right;margin:0 20px 0 0;font-size:1.4em;font-family:'微软雅黑',arial,sans-serif;}
-#ft .contact a{color:#fff;}
-#ft ul{background:#111; margin:0;}
-#ft ul,#ft ul a,#ft .copyright{color:#666;}
-#ft ul li{width:110px;}
-#ft li.col{float:left; text-align:left;display:inline;width:110px;height:140px;padding:30px 0 0 40px;border-right:1px dashed #373536;}
-#ft li.end{border:none;padding-left:70px;}
-#ft h3{font-size:14px;color:#666; font-weight:bold;font-family:'微软雅黑',arial,sans-serif;}
-#ft .sub-list{margin-top:5px;font-size:12px;}
-#ft .sub-list li{list-style-position:inside;list-style-type:disc;line-height:20px;}
-#ft .logo-footer{padding-top:25px;}
-/*-------页脚效果-------------------------------------------------------------------------------------*/
+ /*------------------------------------------------------------------------------------------------------*/
+
  /**
   * @section subtemplates
   * @see     http://www.yaml.de/en/documentation/practice/subtemplates.html

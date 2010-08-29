@@ -1,120 +1,73 @@
-<!-- begin: #col1 - first float column -->
-<div id="col1" role="complementary">
-  <div class="twoColFixLt"> <div id="container">
-      <h1 class="ptitle"><span >今日团购</span>：<%= @product.title %></h1>
-      <div id="sidebar1">
-        <div class="dbox">
-          <div class="buy">
-            <table width="100%" border="0">
-              <tr>
-                <td width="46%" height="90" align="right"><span class="price"><%=number_to_currency(@product.now_price)%></span></td>
-                <td width="54%">
-                <% if @product.sold_count < @product.total_count %>
-                  <form action="/welcome/add_to_cart/<%=@product.id%>" method="post">
-                    <%= image_submit_tag "/images/bt_buy.gif" %>
-                    <%= tag(:input, :type => "hidden", :name =>request_forgery_protection_token.to_s, :value =>form_authenticity_token) %> </form>
-                <% else %>
-                  <img src="/images/bt_exprice.gif"/>
-                <% end %>
-                </td>
-              </tr>
-            </table>
-          </div>
-          <div class="price_list"><div class="content">
-              <table width="100%" border="0" align="center">
-                <tr align="center" height="30">
-                  <td>原价</td>
-                  <td>折扣</td>
-                  <td>节省金额</td>
-                </tr>
-                <tr align="center">
-                  <td><strong><%=number_to_currency(@product.original_price)%></strong>元 </td>
-                  <td> <%=@product.discount%>折 </td>
-                  <td> <%=number_to_currency(@product.save_price)%>元 </td>
-                </tr>
-              </table>
-            </div></div>
+<div id="todayshow">
+  <div id="headshow">
+    <div class="headsider">
+      <p class="pricea">原价：<%=number_to_currency(@product.original_price)%>
+      </p>
+      <p class="save">折扣：<%=@product.discount%>折
+      </p>
+      <div class="buy">
+        <% if @product.sold_count < @product.total_count %>
+          <form action="/welcome/add_to_cart/<%=@product.id%>" method="post">
+             <span class="priceb">现价</span>
+            
+            <%= image_submit_tag "/image/buy.png", :class=>'button' %>
+             <p class="buyhot"><%=number_to_currency(@product.now_price)%></p>
+            <%= tag(:input, :type => "hidden", :name =>request_forgery_protection_token.to_s, :value =>form_authenticity_token) %>
+          </form>
+        <% else %>
+          <img src="/image/bt_expirent.png"/>
+        <% end %>
+
+      </div>
+      <div class="timer">
+        <p class="timeleft">剩余时间:</p>
+        <div class="timeshow">
+          <p class="hour"><em id="RemainH">&nbsp;</em>小时</p>
+          <p class="min"><em id="RemainM">&nbsp;</em>分</p>
+          <p class="sencond"><em id="RemainS">&nbsp;</em></p>
         </div>
-        <div class="dbox"><div class="content">
-            <h3>剩余时间</h3>
-            <div class="time">
-              <table width="100%">
-                <tr class="show" align="center"><td width="33%"><em id="RemainH">&nbsp;</em></td><td width="34%"><em id="RemainM">&nbsp;</em></td><td width="33%"><em id="RemainS">&nbsp;</em></td></tr>
-                <tr align="center"><td>小时</td><td>分钟</td><td>秒</td></tr>
-              </table>
-            </div>
-          </div></div>
-<style type="text/css">
-  .sall_status .slider {
-	background-image: url(images/bg_poll1.gif);
-	background-repeat: no-repeat;
-	height: 22px;
-	width:  <%= slider= @product.sold_count*100/@product.base_count %>%;
-	background-position: right;
-}
-.sall_status .scroll {
-	width: 100%;
-	background-image: url(images/scroll.png);
-	background-position: -<%=(100-slider)*2+10%>px;
-	background-repeat: no-repeat;
-}
-  </style>
-        <div class="dbox">
-          <div class="content"><div class="sall_status">
-          <% if @product.sold_count < @product.base_count %>
-              <h3><strong><%=@product.sold_count%></strong>人已购买</h3>
-              <div class="slider"></div>
-              <div class="scroll"><img src="images/scroll3.png" width="100%"/></div>
-              <div class="discount">
-                <div>0</div>
-                <div class="distop"><%=@product.base_count%></div>
-              </div>
-              <p><br/>团购的最低团购人数是: <%=@product.base_count%>人</p>
-          <% elsif @product.sold_count < @product.total_count %>
-             <h2>团购成功，<br/>可继续购买！</h2>
-             <p><br/><strong><%=@product.sold_count%></strong>人已购买，还有团品，抓紧哟！</p>
-         <% else %>
-             <h2>卖光了!</h2>
-             <p>本次团购共<strong><%=@product.sold_count%></strong>人购买。</p>
-         <% end %>
-            </div>
-          </div></div>
-        <!-- end #sidebar1 --></div>
-      <div id="mainContent">
-        <div class="img"><IMG src="<%=@product.picture%>" width="440"></div>
-        <h2><%=@product.summary%></h2>
+      </div>
+      <div class="buyingbox">
+        <% if @product.sold_count < @product.base_count %>
+          <p class="suc">团购征集中!</p>
+          <p class="num"><%=@product.sold_count%>人已购买</p>
+          <p class="howget">最低团购人数: <%=@product.base_count%>人</p>
+        <% elsif @product.sold_count < @product.total_count %>
+          <p class="suc">团购已成功！</p>
+          <p class="num"><%=@product.sold_count%>人已购买</p>
+          <p class="howget"> 还可继续购买。  数量有限,下单要快</p>
+        <% else %>
+          <p class="suc">卖光了!</p>
+          <p class="num">共<strong><%=@product.sold_count%></strong>人购买</p>
+          <p class="howget"> 本次商品已卖光。  敬请期待下次团购</p>
+        <% end %>
 
-        <!-- end #mainContent --></div>
-      <%= render :partial=>'layouts/share' %>
-      <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
-      <!-- end #container --></div>
-  </DIV>
-
-  <div class="twoColMain">
-    <div id="container">
-      <div id="mainBody">
+      </div>
+    </div>
+    <div class="photo">
+      <img src="<%=@product.picture%>" width="490" height="300" />
+    </div>
+    <h2 class="title">
+      <%=@product.summary%>
+    </h2>
+  </div>
+  s
+  <div id="mainfood">
+    <h3>
+      本单详情
+    </h3>
+    <div class="maininfo">
         <p><%=@product.details%></p>
         <p><%=@product.comment%></p>
-      </div>
-      <div id="mainSide"><div class="centent">
-          <%=@product.contact%>
-      
-         </div></div>
-    </div></div>
-
-</div></div>
-<!-- end: #col1 -->
-<!-- begin: #col3 static column -->
-<div id="col3" role="main">
-  <div id="col3_content" class="clearfix">
-   <!--side bar start-->
-      <%=render :partial=>'layouts/sidebar'%>
-      <!--side bar end-->
+	
+    </div>
+    <div class="shopinfo">
+      <p> <%=@product.contact%></p>
+    </div>
+    <div style="clear:both;"></div>
   </div>
-  <div id="ie_clearing">&nbsp;</div>
-  <!-- End: IE Column Clearing -->
 </div>
-<!-- end: #col3 -->
+
 <!--计时器-->
 <script language="JavaScript">
   var overDate = <%=(@product.ended_at.to_i+24*60*60)*1000%>;//截止时间

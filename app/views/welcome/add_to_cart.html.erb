@@ -1,7 +1,6 @@
-<div id="col1">
+<div class="main_side">
   <div class="note">注: 为了让更多的人享受到团购低价的实惠,本次团品每人购买的数量是有限定的.</div>
-
-<div class="pay highlight">
+ <div class="ROUND-BOX"><div class="TU"></div><div class="TTU"></div><div class="CU">
   <form id="cartForm"  name="cartForm" method="post" action="/add_to_order" onsubmit="return check_quantity();">
    <h3>第一步：订单确认</h3><hr/>
       <table cellspacing="0" cellpadding="0" width="100%">
@@ -31,6 +30,11 @@
         </table>
       <input type="hidden" id="order_price" name="order_price" value="<%= item.price %>"/>
       <%= tag(:input, :type => "hidden", :name =>request_forgery_protection_token.to_s, :value =>form_authenticity_token) %>
+      <p><b>请输入您的手机号：</b><br/>
+        <input type="input" name="phone" value=""/>
+        *重要：购买成功后将把验证码和密码发到您手机,凭短信到商家消费。
+      </p>
+      
       <center><%= image_submit_tag("/images/bt_submit.gif") %></center>
     </form>
     <script language="javascript">
@@ -55,13 +59,6 @@
        }
       }
     </script>
-</div>
-</div>
-  <div id="col3" style="height:300px;">
- <div class="ROUND-BOX"><div class="TU"></div><div class="TTU"></div><div class="CU">
-	<h2>明日团品你来定...</h2>
-    <div class="BOX-CONTENT">
-团奥网运营模式：每天推出一个折扣足够低的精品团购项目，限时限量，过期不候。团奥网致力于为大家整合超低价超实惠商品 让您享受秒杀的体验，团购的快乐！我们的商品是什么？您先说了算。请在以下即将推出的团品中选择你最想要购
-	</div>
 </div><div class="BBU"></div><div class="BU"></div></div>
-  </div>
+</div>
+ 

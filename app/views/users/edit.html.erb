@@ -4,7 +4,7 @@
     $("#yform").validate();
   });
 </script>
-<div id="about">
+<div id="main_side">
   <%= error_messages_for :user %>
   <% form_for @user,:html=>{:id=>"yform",:class=>'yform'} do |f| -%>
   <%= f.hidden_field :login %><%= f.hidden_field :email%>

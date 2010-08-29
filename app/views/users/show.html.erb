@@ -18,7 +18,7 @@ $(document).ready(function(){
 });
 </script>
 
-<div id="col1">
+<div class="main_side">
 <div class="jquery_tabs example2">
   <h3>基本信息</h3>
   <div class="tab-content">
@@ -28,13 +28,14 @@ $(document).ready(function(){
   <h2>你好，<%=@user.login%></h2>
   <p>你使用的邮箱是: <%=@user.email%></p>
   <hr/>
-  <p>设定新密码.</p>
+  <p><a href="javascript:void();" onclick="document.getElementById('reset_password').style.display='block';">设定新密码.</a></p>
+  <div id="reset_password" style="display: none;">
     <p><label for="password">新密码：</label>
       <%= f.password_field :password,:class=>"{required:true,minlength:5}" %></p>
     <p><label for="password_confirmation">密码确认：</label>
       <%= f.password_field :password_confirmation ,:class=>"{required:true,minlength:5,equalTo:'#user_password'}"%></p>
-
     <p><%= submit_tag '好了，提交！' %></p>
+  </div>
   <% end -%>
   </div>
   <h3>订单信息</h3>
@@ -48,9 +49,3 @@ $(document).ready(function(){
   </div>
 </div> 
 </div>
-  <div id="col3" style="height:300px;">
-   <%  round_box  do |box| %>
-     "sflsldfls"
-  <% end  %>
-   <%=round_box("明日团品你来定...","团奥网运营模式：每天推出一个折扣足够低的精品团购项目，限时限量，过期不候。团奥网致力于为大家整合超低价超实惠商品 让您享受秒杀的体验，团购的快乐！我们的商品是什么？您先说了算。请在以下即将推出的团品中选择你最想要购买的")%>
-  </div>

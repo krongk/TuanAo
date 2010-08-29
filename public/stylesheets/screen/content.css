@@ -163,9 +163,9 @@
   .info { background:#f8f8f8; color:#666; padding:0px; margin-bottom:0.5em; font-size:91.7%; }
 
   .note {
-	background:#efe;
-	color:#099;
-	border:2px solid #099;
+	background:#FF6;
+	color:#000;
+	border:2px solid #FFCC99;
 	padding:10px;
 	margin-bottom:1em;
 }

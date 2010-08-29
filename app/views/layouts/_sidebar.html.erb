@@ -1,44 +1,13 @@
 <%#
-# To change this template, choose Tools | Templates
-# and open the template in the editor.
+# To add some side bar components.
 %>
-<a href="/signup" style="border: 0;">
-<img src="images/wahtpai.jpg"/></a>
-
-<script language="javascript">
-$(document).ready(function(){
-  $("#sidefeedForm").validate();
-})
-</script>
-<div class="side_whant">
-  <% form_for(@feedback=Feedback.new,:html=>{:id=>'sidefeedForm'}) do |f| %>
-  <%= f.error_messages %>
-
+<div id="sider">
+  <p><a href="/about/faq"><img src="/image/help.jpg"/></a></p>
+   <%#render :partial=>'layouts/side_share'%>
   <p>
-    <%= f.label :name,"您的称呼:" %>
-    <%= f.text_field :name,:class=>"required" %>
-  </p><p>
-    <%= f.label :contact,"联系方式:" %>
-    <%= f.text_field :contact,:class=>"required" %>
-  </p><p>
-    <%= f.label :message,"填写你希望团购的信息:" %>
-    <%= f.text_area :message,:cols=>24,:rows=>4 ,:class=>"required" %>
+  <h2>团奥网新版上线了！</h2>
+  <p><a href="/feedbacks/new">团奥网将在2010-10-1正式运营！欢迎大家的参与。提前为本站提出宝贵意见将有好礼相送！</a></p>
   </p>
-  <p>
-    <%= f.submit '提  交' %>
-  </p>
-<% end %>
+  <p><%=render :partial=>'layouts/share'%></p>
+  
 </div>
-
-<div class="sina_twitter">
-  <iframe id="sina_widget_1728333857" style="width:100%; height:500px;" frameborder="0" scrolling="no" src="http://v.t.sina.com.cn/widget/widget_blog.php?uid=1728333857&height=500&skin=wd_01&showpic=1"></iframe>
-</div>
-
-
-<script>
-  $(function(){
-  $('new_feedback').elements.hide();
-  $('input:text').onfocus=$('input:text').style.background="#ccc";
-  $(document.body).css("background","block");
-  });
-</script>

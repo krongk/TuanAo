@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :login_required, :only=>[:show,:edit,:update]
+  before_filter :login_required, :only=>[:show,:orders]
   #show
   def show
     @user = self.current_user
@@ -71,11 +71,13 @@ class UsersController < ApplicationController
     end
   end
   #send email
+  private
   def sendmail(user)
       recipient = user.email
       subject ="团奥网密码找回"
-      message = "<p>您在团奥网申请了重设密码，请点击下面的链接，然后根据页面提示完成密码重设：</p>
-      http://www.tuanao.com/users/#{user.id}/edit?active=#{user.activation_code}"
+      message = "<p>您在团奥网申请了重设密码，请点击或复制下面的链接到浏览器并打开，然后根据页面提示完成密码重设：</p>"
+      message +="<a href='http://www.tuanao.com/users/#{user.id}/edit?active=#{user.activation_code}'>"
+      message += "http://www.tuanao.com/users/#{user.id}/edit?active=#{user.activation_code}</a>"
       Emailer.deliver_contact(recipient, subject, message)
       return if request.xhr?
       flash[:notice1]="操作成功!请检查你的邮箱.并根据油箱提示修改密码！"

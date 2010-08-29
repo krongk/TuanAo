@@ -52,6 +52,7 @@ ActionController::Routing::Routes.draw do |map|
   map.signup '/signup', :controller => 'users', :action => 'new'
 	map.login '/login', :controller => 'sessions', :action => 'new'
 	map.logout '/logout', :controller => 'sessions', :action => 'destroy'
+  map.profile '/profile', :controller => 'welcome', :action => 'profile'
   map.today     '/today',    :controller => "welcome",:action=>'today'
   map.tomorrow  '/tomorrow',  :controller => "welcome",:action=>'tomorrow'
   map.yesterday '/yesterday', :controller => "welcome",:action=>'yesterday'

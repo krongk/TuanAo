@@ -17,6 +17,20 @@
 
 @media screen, projection
 {
+  /** 
+   * (en) Forcing vertical scrollbars in IE8, Firefox, Webkit & Opera 
+   * (de) Erzwingen vertikaler Scrollbalken in IE8, Firefox, Webkit & Opera 
+   *
+   * @workaround
+   * @affected IE8, FF, Webkit, Opera
+   * @css-for all
+   * @valid CSS3
+   */
+
+  body { overflow-y: scroll; }
+
+  /*------------------------------------------------------------------------------------------------------*/
+  
   /**
    * (en) Formatting YAML's  basic layout elements
    * (de) Gestaltung des YAML Basis-Layouts
@@ -24,69 +38,99 @@
 
   /* (en) Marginal areas & page background */
   /* (de) Randbereiche & Seitenhintergrund */
-  body { background: #4d87c7 url("../../images/bg_blue.jpg") repeat-x top left fixed; padding: 10px 0; }
-
-  /* (en) Layout: width, background, borders */
-  /* (de) Layout: Breite, Hintergrund, Rahmen */
-  .page_margins { min-width: 740px; max-width: 80em; margin: 0 auto; border: 0px #889 solid; }
-  .page{ background: #fff; border: 10px #fff solid; }
+  body { background: transparent; }
 
   /* (en) Centering layout in old IE-versions */
   /* (de) Zentrierung des Layouts in alten IE-versionen */
-  body { text-align: center }
-  .page_margins { text-align:left }
+  body { text-align: center; }
+  .page_margins { text-align:left; margin: 0 auto; }
+
+  /* (en) Layout: width, background, borders */
+  /* (de) Layout: Breite, Hintergrund, Rahmen */
+  .page_margins { max-width: 80em; }
+  .page { margin: 0 20px; }
+  #topnav, #header, #nav, #main, #extended, #footer { overflow:hidden; min-width: 720px; }
 
   /* (en) Designing main layout elements */
   /* (de) Gestaltung der Hauptelemente des Layouts */
+  #topnav { background: transparent; color: #ccc; }
+  #footer { background: #888; color: #ccc; }
+  #topnav .page { text-align:left; padding: 5px 0; }
+  #topnav span.navlinks { float:right; }
+
   #header {
-    color: #000;
-    background: #fff repeat-x top left;
-    padding: 45px 2em 1em 20px;
+    color: #fff;
+  border-top: 10px #fff solid;
+  border-bottom: 10px #fff solid;
+    background: #4d87c7 url("../../images/bg_blue.png") repeat-x top left;
   }
 
-  #topnav { color: #aaa; background: transparent; }
-
-  #nav ul { margin-left: 20px; }
-
-  #main { background: #fff; margin:0; padding: 10px 0; }
-
-  #footer {
-    color:#666;
-    background: #f4f4f4;
-    padding: 15px;
-    border-top: 5px #efefef solid;
-    line-height: 1.5em;
+  #header .page {
+    position:relative;
+  padding: 130px 0px 20px 0px;
   }
 
-  /*------------------------------------------------------------------------------------------------------*/
+  #header h1 { color: #fff !important; }
 
-  /**
-   * (en) Formatting content container
-   * (de) Formatierung der Inhalts-Container
-   *
-   * |-------------------------------|
-   * | #header                       |
-   * |-------------------------------|
-   * | #col1   | #col3     | #col2   |
-   * | 25%     | flexible  | 25%     |
-   * |-------------------------------|
-   * | #footer                       |
-   * |-------------------------------|
-   */
+  #nav {
+    background: #994D06;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-top:10px;
+    border-top: 0px #666 solid;
+    border-bottom: 0px #ccc dashed;
+  }
 
+  #main {
+    background: #fff url(../../img/header_bg.png) no-repeat left top;
+    border-top: 0px #ccc dashed;
+  }
 
-  #col1 { width: 70% }
-  #col1_content { padding: 10px 10px 10px 20px; border-right: 1px #ddd dotted; }
+  #main .c25r { border-left: 1px #88a dashed; }
 
-  #col3 { margin: 0 0 0 75% }
-  #col3_content { padding: 0px; }
+  #extended { background: #eee; border-top: 1px #ccc dashed; }
+  #extended .c25l,  #extended .c50l { border-right: 1px #88a dashed; }
 
-  /*------------------------------------------------------------------------------------------------------*/
+  #extended .subc  { padding: 0 10px; }
+  #extended .subcl { padding: 0 10px 0 0; }
+  #extended .subcr { padding: 0 0 0 10px; }
 
-  /**
-   * (en) Styling of layout specific elements
-   * (de) Gestaltung layoutabhängiger Elemente
-   */
+  #main, #extended { padding-top: 20px; padding-bottom: 10px; }
+
+  #footer { border-top: 2px #666 solid; }
+  #footer .page { padding: 10px 0px; }
+
+ /**
+  * ------------------------------------------------------------------------------------------------- #
+  *
+  * (en) Modifying "shiny buttons" navigation
+  * (en) Anpassung der "Shiny Buttons" Navigation
+  */
+
+  .hlist { background: transparent; border: 0 none; }
+  .hlist ul { margin-left: 0; border: 0 none; width: 100%; }
+  .hlist ul li { line-height: 1.2em; display:block; width: 12.5%; border:0; padding: 0;}
+  .hlist ul li.last { margin-left: -5px; float:right; border-right: 1px #ccc solid;}
+
+  .hlist ul li a,
+  .hlist ul li strong {  width:auto; display:block; border-left: 0px #ccc solid; color: #fff; font-weight: bold; margin: 0 5px 0 0; padding: 0.5em 0 0.5em 0.5em; }
+
+  .hlist ul li a span { display:block; color: #888; }
+  .hlist ul li strong span { display:block; color: #aaa; }
+
+  .hlist ul li a:focus,
+  .hlist ul li a:hover,
+  .hlist ul li a:active {  background: transparent url(../../img/menu_bg.png) no-repeat center; color: #444; }
+
+  .hlist ul li.active { background:transparent; border: 0 none; }
+  .hlist ul li.active strong { background: #800; color: #fff; font-weight: bold; }
+
+ /**
+  * ------------------------------------------------------------------------------------------------- #
+  *
+  * (en) Styling of layout specific elements
+  * (de) Gestaltung layoutabhängiger Elemente
+  */
 
   #header h1 {
     font-weight:bold;
@@ -96,17 +140,17 @@
     color:#000;
   }
 
-  #header span { color:#999; }
+  #header span { color:#99c; }
 
-  #topnav a { color: #999; font-weight: normal; background:transparent; text-decoration:none; }
+  #topnav a { color: #fff; font-weight: normal; background:transparent; text-decoration:none; }
   #topnav a:focus,
   #topnav a:hover,
   #topnav a:active { text-decoration:underline; background-color: transparent; }
 
-  #footer a { color: #999; background:transparent; font-weight: bold; }
+  #footer a { color: #fff; background:transparent; font-weight: bold; }
   #footer a:focus,
   #footer a:hover,
-  #footer a:active {color: #4D87C7; background-color: transparent; text-decoration:underline; }
+  #footer a:active { background-color: transparent; text-decoration:underline; }
 
  /**
   * ------------------------------------------------------------------------------------------------- #
@@ -118,68 +162,13 @@
   *
   * @section content-skiplinks
   */
-
+  
   #skiplinks a.skip:focus,
   #skiplinks a.skip:active { 
 	color: #fff; 
-	background: #333;
-  	border: 0 none;
+	background: #333; 
 	border-bottom: 1px #000 solid;
 	padding: 10px 0;
 	text-decoration:none;
   }
-
-  /*------------------------------------------------------------------------------------------------------*/
-
-  /**
-   * (en) Styling of equal heights elements
-   */
-
-  .example1 { margin-bottom: 1em; }
-
-  .example1 .subc  { margin: 0 5px; padding: 0; }
-  .example1 .subcl { margin: 0 10px 0 0; padding: 0; }
-  .example1 .subcr { margin: 0 0 0 10px; padding: 0; }
-
-  .example1 h6 { background: #600; color: #fff; text-transform:uppercase; font-weight:bold; padding: 5px 10px; }
-  .example1 ul { margin: 10px 10px 10px 20px; }
-  .example1 p { margin: 10px; }
-
-  .example1 .subcl,
-  .example1 .subcr,
-  .example1 .subc {
-    background: #f0f0f0;
-    color: #666;
-    padding-bottom: 100em;
-    margin-bottom: -100em;
-  }
-  
-  .box-top .c33l,
-  .box-top .c33r { background: url("../../images/frame/lframe.png") top left no-repeat; }
-
-  .box-top .subcl,
-  .box-top .subcr,
-  .box-top .subc {
-    padding: 15px;
-    background: url("../../images/frame/rframe.png") top right no-repeat;
-    padding-bottom: 100em;
-    margin-bottom: -100em;
-  }
-
-  .box-bottom { margin-bottom: 1em; text-align:right; }
-
-  .box-bottom .c33l,
-  .box-bottom .c33r { background: url("../../images/frame/lframe.png") bottom left no-repeat; }
-
-  .box-bottom .subcl,
-  .box-bottom .subcr,
-  .box-bottom .subc {
-    padding: 0 20px 15px 20px;
-    background: url("../../images/frame/rframe.png") bottom right no-repeat;
-  }
-
-  /* adjustment of conent elements within the boxes */
-  .box-top h6 { display: block; margin: 10px 5px 5px 5px; border-bottom: 1px #c88 solid; font-style:normal; font-variant:small-caps; }
-  .box-top p { padding: 5px; margin-bottom: 0;}
 }
-

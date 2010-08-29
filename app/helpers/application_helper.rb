@@ -9,8 +9,13 @@ module ApplicationHelper
     end
   end
  #格式化时间
-  def format_datetime(dt)
-    dt.strftime("%Y-%m-%d %H:%M") if dt
+  def format_datetime(dt, t = nil)
+    return '' unless dt
+    if t
+      dt.strftime("%Y-%m-%d %H:%M")
+    else
+      dt.strftime("%Y年 %m月 %d日")
+    end
   end
  #格式化布尔值
    def format_yes_or_no(value)
