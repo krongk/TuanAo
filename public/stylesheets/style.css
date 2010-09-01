@@ -443,6 +443,62 @@ width:960px;
 	font-size:16px;
 	font-weight:bold;	
 }
+
+/* help */
+#content #contenter .helptitle h3 {
+	background-image:url("../image/help.png");
+	background-repeat:no-repeat;
+	background-position:0 -2px;
+	margin-left:16px;	
+	margin-top:8px;	
+    width:108px;
+	height:32px;
+	text-indent: -9999px;
+}
+
+#content #contenter .helpmain {	
+    width:730px;
+	background-color:#ffffff;	
+}
+
+#content #contenter .helpmain .helplist {
+	border-right-style:dashed;
+	border-right-color:#BEC0C2;
+    border-right-width:1px;
+    float:left;
+    width:120px;
+	
+}
+
+#content #contenter .helpmain .helplist ul {
+  	padding-top:16px;
+	padding-left:24px;	
+	margin-top:16px;	
+	margin-top: 0px;
+	background-color:#F0F0F0;	
+	height:900px;		
+}
+#content #contenter .helpmain .helplist ul li {
+	height:auto;
+    font-size:13px;	
+    padding:2px;
+	}
+#content #contenter .helpmain .helpcontent {
+    display:inline;
+    float:right;
+    width:592px; 
+	padding-top:16px;
+}
+#content #contenter .helpmain .helpcontent ul {
+}
+#content #contenter .helpmain .helpcontent ul li {
+	list-style: none;
+    margin-bottom:16px;
+	}
+#content #contenter .helpmain .helpinfo {
+    padding-top:16px;
+}
+
 <!--footer--
 .cf {
 	list-style-type: none;
