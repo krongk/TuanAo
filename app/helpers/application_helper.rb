@@ -1,9 +1,10 @@
+# coding: utf-8
 # Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
   #格式化货币
   def number_to_currency(price)
     if price
-      sprintf("￥%0.01f",price)
+      sprintf("Y%0.01f",price)
     else
       ""
     end

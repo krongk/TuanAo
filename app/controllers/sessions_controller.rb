@@ -1,4 +1,4 @@
-# This controller handles the login/logout function of the site.  
+# coding: utf-8  
 class SessionsController < ApplicationController
   # Be sure to include AuthenticationSystem in Application Controller instead
   # render new.rhtml
